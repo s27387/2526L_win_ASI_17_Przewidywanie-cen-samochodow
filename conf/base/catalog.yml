@@ -1,0 +1,15 @@
+raw_data:
+  type: pandas.CSVDataset
+  filepath: data/Car_sale_ads.csv
+
+custom_model:
+  type: kedro_datasets.pickle.PickleDataset
+  filepath: models/custom_model.pkl
+
+custom_preprocessor:
+  type: kedro_datasets.pickle.PickleDataset
+  filepath: models/custom_preprocessor.pkl
+
+custom_top_features:
+  type: kedro_datasets.pickle.PickleDataset
+  filepath: models/custom_top_features.pkl

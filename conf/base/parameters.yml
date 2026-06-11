@@ -1,0 +1,72 @@
+autogluon:
+  target_column: "Price"
+  time_limit: 300
+  preset: "medium_quality"
+  test_size: 0.2
+  random_state: 42
+  problem_type: "regression"
+  eval_metric: "root_mean_squared_error"
+
+custom:
+  target_column: "Price"
+  test_size: 0.2
+  random_state: 42
+  cleaning:
+    eur_rate: 4.30
+    year_min: 1990
+    mileage_cap: 450000
+    power_cap: 500
+    keep_fuel_types:
+      - "Gasoline"
+      - "Diesel"
+      - "Gasoline + LPG"
+    co2_cap_percentile: 0.99
+    doors_min: 2
+    doors_max: 5
+    drop_columns:
+      - "Index"
+      - "Currency"
+      - "Offer_publication_date"
+      - "Vehicle_version"
+      - "Vehicle_generation"
+      - "First_registration_date"
+      - "First_owner"
+      - "Features"
+      - "Origin_country"
+  imputation:
+    fingerprint_passes: 2
+    core_cols:
+      - "Vehicle_brand"
+      - "Vehicle_model"
+      - "Production_year"
+      - "Type"
+      - "Fuel_type"
+    opt_cols:
+      - "Transmission"
+      - "Power_HP"
+      - "Doors_number"
+      - "Displacement_cm3"
+    target_cols:
+      - "Transmission"
+      - "Doors_number"
+      - "Power_HP"
+      - "Displacement_cm3"
+      - "Drive"
+      - "CO2_emissions"
+  feature_engineering:
+    current_year: 2023
+    add_voivodeship: true
+    add_age_x_mileage: true
+  feature_selection:
+    n_top_features: 15
+    importance_threshold: 0.01
+  preprocessing:
+    max_categories: 15
+  rf:
+    n_estimators: [200, 300]
+    max_depth: [20, 30]
+    min_samples_leaf: [1, 4]
+    max_features: ["sqrt"]
+    cv: 5
+    scoring: "neg_root_mean_squared_error"
+    n_jobs: -1

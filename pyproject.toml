@@ -1,0 +1,7 @@
+[tool.kedro]
+package_name = "revrate"
+project_name = "RevRate"
+kedro_init_version = "1.3.1"
+
+[tool.kedro_telemetry]
+project_id = "6fc17f61d28b42bf9690e37a51a10232"

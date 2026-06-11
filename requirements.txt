@@ -1,0 +1,12 @@
+kedro
+kedro-datasets
+mlflow
+pandas
+scikit-learn
+notebook
+seaborn
+joblib
+pydantic
+fastapi
+uvicorn
+autogluon
