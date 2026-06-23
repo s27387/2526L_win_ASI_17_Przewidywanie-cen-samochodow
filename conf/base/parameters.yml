@@ -11,6 +11,11 @@ custom:
   target_column: "Price"
   test_size: 0.2
   random_state: 42
+  data_download:
+    dataset: "bartoszpieniak/poland-cars-for-sale-dataset"
+    data_dir: "data"
+    filename: "Car_sale_ads.csv"
+    force_download: false
   cleaning:
     eur_rate: 4.30
     year_min: 1990
@@ -60,6 +65,7 @@ custom:
   feature_selection:
     n_top_features: 15
     importance_threshold: 0.01
+    n_jobs: 1
   preprocessing:
     max_categories: 15
   rf:
@@ -69,4 +75,4 @@ custom:
     max_features: ["sqrt"]
     cv: 5
     scoring: "neg_root_mean_squared_error"
-    n_jobs: -1
+    n_jobs: 1

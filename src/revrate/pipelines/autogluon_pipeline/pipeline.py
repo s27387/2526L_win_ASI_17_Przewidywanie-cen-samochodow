@@ -1,5 +1,7 @@
 from kedro.pipeline import Pipeline, node
 
+from ..custom_pipeline.nodes import download_raw_data
+
 from .nodes import (
     preprocess_for_autogluon,
     split_data,
@@ -12,8 +14,14 @@ def create_pipeline(**kwargs) -> Pipeline:
     return Pipeline(
         [
             node(
+                func=download_raw_data,
+                inputs="params:custom.data_download",
+                outputs="raw_data_from_source_ag",
+                name="autogluon_download_raw_data_node",
+            ),
+            node(
                 func=preprocess_for_autogluon,
-                inputs=["raw_data", "params:autogluon.target_column"],
+                inputs=["raw_data_from_source_ag", "params:autogluon.target_column"],
                 outputs="autogluon_processed_data",
                 name="autogluon_preprocess_node",
             ),

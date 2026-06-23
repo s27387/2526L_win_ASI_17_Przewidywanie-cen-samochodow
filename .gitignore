@@ -157,6 +157,20 @@ ENV/
 env.bak/
 venv.bak/
 
+# Local data, models and experiment artifacts
+data/
+models/
+mlruns/
+mlflow.db
+mlflow.db-journal
+.matplotlib/
+.tmp/
+.telemetry
+
+# Local Kaggle API credentials
+kaggle.json
+.kaggle/
+
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -216,3 +230,4 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+Wymagania.txt

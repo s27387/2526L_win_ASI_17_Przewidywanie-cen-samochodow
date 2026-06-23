@@ -1,4 +1,5 @@
 import logging
+from pathlib import Path
 
 import matplotlib
 matplotlib.use("Agg")
@@ -17,6 +18,46 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from .. import init_mlflow
 
 logger = logging.getLogger(__name__)
+
+
+def download_raw_data(download_params: dict) -> pd.DataFrame:
+    dataset = download_params.get(
+        "dataset", "bartoszpieniak/poland-cars-for-sale-dataset"
+    )
+    data_dir = Path(download_params.get("data_dir", "data"))
+    filename = download_params.get("filename", "Car_sale_ads.csv")
+    force_download = download_params.get("force_download", False)
+
+    data_dir.mkdir(parents=True, exist_ok=True)
+    csv_path = data_dir / filename
+
+    if force_download or not csv_path.exists():
+        try:
+            import kaggle.api
+        except ImportError as exc:
+            raise RuntimeError(
+                "Kaggle package is required to download the dataset. "
+                "Install it with `pip install kaggle`."
+            ) from exc
+
+        logger.info("Downloading dataset %s to %s", dataset, data_dir)
+        kaggle.api.authenticate()
+        kaggle.api.dataset_download_files(dataset, path=str(data_dir), unzip=True)
+
+        if not csv_path.exists():
+            csv_files = list(data_dir.glob("*.csv"))
+            if len(csv_files) == 1:
+                csv_path = csv_files[0]
+            else:
+                raise FileNotFoundError(
+                    f"Expected {csv_path} after download, found {len(csv_files)} CSV files."
+                )
+    else:
+        logger.info("Using existing raw dataset: %s", csv_path)
+
+    data = pd.read_csv(csv_path)
+    logger.info("Raw data loaded. Shape: %s", data.shape)
+    return data
 
 
 def _find_similar_cars(pool, core_cols, core_vals, opt_cols, opt_vals):
@@ -217,7 +258,8 @@ def analyze_and_select_features(
         X_feat[col] = X_feat[col].astype("category").cat.codes
     y_feat = df[target_column]
 
-    rf = RandomForestRegressor(n_estimators=100, random_state=random_state, n_jobs=-1)
+    n_jobs = selection_params.get("n_jobs", 1)
+    rf = RandomForestRegressor(n_estimators=100, random_state=random_state, n_jobs=n_jobs)
     rf.fit(X_feat, y_feat)
 
     importances = pd.DataFrame(

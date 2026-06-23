@@ -1,6 +1,7 @@
 from kedro.pipeline import Pipeline, node
 
 from .nodes import (
+    download_raw_data,
     clean_data,
     impute_missing,
     engineer_features,
@@ -17,8 +18,14 @@ def create_pipeline(**kwargs) -> Pipeline:
     return Pipeline(
         [
             node(
+                func=download_raw_data,
+                inputs="params:custom.data_download",
+                outputs="raw_data_from_source",
+                name="download_raw_data_node",
+            ),
+            node(
                 func=clean_data,
-                inputs=["raw_data", "params:custom.cleaning", "params:custom.target_column"],
+                inputs=["raw_data_from_source", "params:custom.cleaning", "params:custom.target_column"],
                 outputs="cleaned_data",
                 name="clean_data_node",
             ),
