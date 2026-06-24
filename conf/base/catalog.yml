@@ -9,3 +9,7 @@ custom_preprocessor:
 custom_top_features:
   type: kedro_datasets.pickle.PickleDataset
   filepath: models/custom_top_features.pkl
+
+reference_stats:
+  type: kedro_datasets.json.JSONDataset
+  filepath: models/reference_stats.json

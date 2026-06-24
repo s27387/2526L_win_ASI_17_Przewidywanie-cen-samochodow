@@ -245,6 +245,44 @@ def engineer_features(data: pd.DataFrame, fe_params: dict, target_column: str) -
     return df
 
 
+def build_reference_stats(data: pd.DataFrame, target_column: str) -> dict:
+    df = data.drop(columns=[target_column], errors="ignore")
+
+    numeric_stats = {}
+    for column in df.select_dtypes(include=[np.number]).columns:
+        values = pd.to_numeric(df[column], errors="coerce").dropna()
+        if values.empty:
+            continue
+        numeric_stats[column] = {
+            "min": float(values.min()),
+            "max": float(values.max()),
+            "mean": float(values.mean()),
+            "std": float(values.std(ddof=0)),
+            "p01": float(values.quantile(0.01)),
+            "p99": float(values.quantile(0.99)),
+        }
+
+    categorical_stats = {}
+    for column in df.select_dtypes(include=["object", "category"]).columns:
+        values = df[column].dropna().astype(str)
+        categorical_stats[column] = {
+            "unique_count": int(values.nunique()),
+            "known_values": sorted(values.unique().tolist()),
+        }
+
+    stats = {
+        "numeric": numeric_stats,
+        "categorical": categorical_stats,
+        "drift_rule": "numeric values outside p01-p99 range or unseen categorical values",
+    }
+    logger.info(
+        "Reference stats built. Numeric: %d, categorical: %d",
+        len(numeric_stats),
+        len(categorical_stats),
+    )
+    return stats
+
+
 def analyze_and_select_features(
     data: pd.DataFrame,
     target_column: str,

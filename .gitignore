@@ -160,6 +160,7 @@ venv.bak/
 # Local data, models and experiment artifacts
 data/
 models/
+logs/
 mlruns/
 mlflow.db
 mlflow.db-journal

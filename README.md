@@ -100,6 +100,7 @@ Zapisywane artefakty:
 models/custom_model.pkl
 models/custom_preprocessor.pkl
 models/custom_top_features.pkl
+models/reference_stats.json
 ```
 
 ## Pipeline AutoGluon
@@ -163,6 +164,7 @@ Dostepne endpointy:
 ```text
 GET  /health
 POST /predict
+GET  /monitoring/summary
 ```
 
 Dokumentacja Swagger UI:
@@ -171,4 +173,85 @@ Dokumentacja Swagger UI:
 http://127.0.0.1:8000/docs
 ```
 
-API korzysta z artefaktow zapisanych przez `custom_pipeline`, dlatego przed uruchomieniem API trzeba miec wygenerowane pliki w katalogu `models/`.
+API korzysta z artefaktow zapisanych przez `custom_pipeline`, dlatego przed wykonaniem predykcji trzeba miec wygenerowane pliki w katalogu `models/`. Dokumentacja `/docs` i endpoint `/health` uruchamiaja sie bez ladowania modelu; model jest ladowany dopiero przy pierwszym wywolaniu `/predict`.
+
+Odpowiedz `/predict` zawiera:
+
+```text
+predicted_price
+currency
+drift_detected
+drift_warnings
+```
+
+## Monitoring API i drift danych
+
+API zapisuje kazda predykcje do lokalnego pliku:
+
+```text
+logs/predictions.csv
+```
+
+W logu zapisywane sa:
+
+- czas predykcji,
+- przewidziana cena,
+- czas obslugi requestu,
+- informacja czy wykryto drift,
+- lista ostrzezen driftu,
+- dane wejsciowe requestu.
+
+Prosty drift detection opiera sie na pliku:
+
+```text
+models/reference_stats.json
+```
+
+Plik jest generowany przez `custom_pipeline` i zawiera statystyki referencyjne danych treningowych. API porownuje nowe requesty z tym punktem odniesienia:
+
+- dla cech numerycznych sprawdza, czy wartosc wychodzi poza zakres `p01-p99`,
+- dla cech kategorycznych sprawdza, czy wartosc wystepowala w danych treningowych.
+
+Podsumowanie monitoringu mozna sprawdzic przez:
+
+```text
+GET /monitoring/summary
+```
+
+Endpoint zwraca m.in. liczbe predykcji, liczbe predykcji z wykrytym driftem, wspolczynnik driftu i czas ostatniej predykcji.
+
+## Status wymagan
+
+| Punkt wymagan | Status | Co jest w projekcie |
+|---|---|---|
+| 1. Organizacja projektu i zespolu | Zrobione czesciowo | Repozytorium, struktura projektu, srodowisko Python i plik `requirements.txt`. Historia zmian zalezy od repozytorium Git. |
+| 2. Wersja podstawowa modelu | Zrobione | Notebook `notebooks/pipeline.ipynb` zawiera EDA, preprocessing, trening i ewaluacje modelu. |
+| 3. Struktura projektu i pipeline | Zrobione | Kod podzielony na moduly, pipeline Kedro zawiera pobieranie danych, preprocessing, trening i ewaluacje. |
+| 4. Udoskonalanie modelu | Zrobione | MLflow, AutoGluon, inzynieria cech, selekcja cech, GridSearchCV i porownanie kilku modeli. |
+| 5. Pipeline produkcyjny | Zrobione czesciowo | Lokalne API FastAPI, artefakty modelu, logowanie predykcji i prosty drift detection. Do dopracowania zostaje ewentualny Docker/chmura i bardziej rozbudowana optymalizacja. |
+| 6. MLOps / repozytoria | Zrobione czesciowo | MLflow i lokalne artefakty modelu. Brak DVC/Feast albo pelnego CI/CD/Continuous Training. |
+| 7. Dokumentacja | Zrobione czesciowo | README opisuje projekt, dane, pipeline, uruchomienie, wyniki, API i monitoring. Brakuje jeszcze diagramu architektury. |
+| 8. Podsumowanie i prezentacja | Do przygotowania | Wyniki i demo API sa gotowe jako material do prezentacji. |
+
+## Co jest gotowe do pokazania
+
+- uruchomienie `custom_pipeline`,
+- uruchomienie `autogluon_pipeline`,
+- porownanie wynikow kilku modeli,
+- lokalne API FastAPI po wytrenowaniu custom modelu,
+- monitoring predykcji i prosty drift detection,
+- zapis modeli i eksperymentow.
+
+## Najwazniejsze pliki
+
+```text
+Wymagania.txt
+README.md
+requirements.txt
+kaggle.example.json
+conf/base/parameters.yml
+src/revrate/pipelines/custom_pipeline/nodes.py
+src/revrate/pipelines/autogluon_pipeline/nodes.py
+src/revrate/api/app.py
+notebooks/pipeline.ipynb
+```

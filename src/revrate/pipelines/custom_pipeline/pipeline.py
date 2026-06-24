@@ -5,6 +5,7 @@ from .nodes import (
     clean_data,
     impute_missing,
     engineer_features,
+    build_reference_stats,
     analyze_and_select_features,
     split_data,
     preprocess_data,
@@ -40,6 +41,12 @@ def create_pipeline(**kwargs) -> Pipeline:
                 inputs=["imputed_data", "params:custom.feature_engineering", "params:custom.target_column"],
                 outputs="engineered_data",
                 name="engineer_features_node",
+            ),
+            node(
+                func=build_reference_stats,
+                inputs=["engineered_data", "params:custom.target_column"],
+                outputs="reference_stats",
+                name="build_reference_stats_node",
             ),
             node(
                 func=analyze_and_select_features,
