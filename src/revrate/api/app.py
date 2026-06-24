@@ -52,21 +52,19 @@ def load_artifacts():
         raise RuntimeError("Model files not found. Run `kedro run` first.") from e
 
 
-@app.on_event("startup")
-def startup_event():
-    load_artifacts()
-
-
 @app.get("/health")
 def health_check():
-    return {"status": "ok"}
+    return {"status": "ok", "model_loaded": model is not None}
 
 
 @app.post("/predict", response_model=PredictionResponse)
 def predict(features: CarFeatures):
     global model, preprocessor, selected_features
-    if model is None:
-        raise HTTPException(status_code=503, detail="Model not loaded yet.")
+    if model is None or preprocessor is None or selected_features is None:
+        try:
+            load_artifacts()
+        except RuntimeError as exc:
+            raise HTTPException(status_code=503, detail=str(exc)) from exc
 
     current_year = 2023
     car_age = max(current_year - features.Production_year, 0)

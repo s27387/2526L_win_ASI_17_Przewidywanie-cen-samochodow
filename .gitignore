@@ -163,6 +163,8 @@ models/
 mlruns/
 mlflow.db
 mlflow.db-journal
+mlflow_*.db
+mlflow_*.db-journal
 .matplotlib/
 .tmp/
 .telemetry

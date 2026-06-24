@@ -6,6 +6,37 @@ autogluon:
   random_state: 42
   problem_type: "regression"
   eval_metric: "root_mean_squared_error"
+  sample_size: 30000
+  model_dir: "models/autogluon_models"
+  use_timestamped_model_dir: true
+  eur_rate: 4.30
+  current_year: 2023
+  drop_production_year: true
+  year_min: 1990
+  mileage_cap: 450000
+  power_cap: 500
+  keep_fuel_types:
+    - "Gasoline"
+    - "Diesel"
+    - "Gasoline + LPG"
+  drop_columns:
+    - "Index"
+    - "Currency"
+    - "Offer_publication_date"
+    - "Vehicle_version"
+    - "Vehicle_generation"
+    - "First_registration_date"
+    - "First_owner"
+    - "Features"
+    - "Origin_country"
+    - "Offer_location"
+  hyperparameters:
+    RF: {}
+    XT: {}
+    KNN: {}
+  num_bag_folds: 0
+  num_stack_levels: 0
+  verbosity: 2
 
 custom:
   target_column: "Price"

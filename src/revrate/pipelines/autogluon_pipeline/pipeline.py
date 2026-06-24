@@ -21,7 +21,7 @@ def create_pipeline(**kwargs) -> Pipeline:
             ),
             node(
                 func=preprocess_for_autogluon,
-                inputs=["raw_data_from_source_ag", "params:autogluon.target_column"],
+                inputs=["raw_data_from_source_ag", "params:autogluon"],
                 outputs="autogluon_processed_data",
                 name="autogluon_preprocess_node",
             ),
