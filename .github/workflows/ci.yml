@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  smoke-checks:
+    runs-on: windows-latest
+    env:
+      PYTHONPATH: src
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Check Python syntax
+        run: python -B -m compileall src
+
+      - name: Check Kedro pipeline registry
+        run: |
+          python -B -c "from kedro.framework.project import configure_project; configure_project('revrate'); from src.revrate.pipeline_registry import register_pipelines; p = register_pipelines(); assert 'custom_pipeline' in p; assert 'autogluon_pipeline' in p; assert '__default__' in p; print(sorted(p.keys()))"
+
+      - name: Check FastAPI OpenAPI schema
+        run: |
+          python -B -c "from src.revrate.api.app import app; paths = set(app.openapi()['paths']); required = {'/health', '/predict', '/monitoring/summary'}; assert required <= paths; print(sorted(paths))"

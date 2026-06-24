@@ -220,18 +220,44 @@ GET /monitoring/summary
 
 Endpoint zwraca m.in. liczbe predykcji, liczbe predykcji z wykrytym driftem, wspolczynnik driftu i czas ostatniej predykcji.
 
-## Status wymagan
+## Automatyzacja projektu
 
-| Punkt wymagan | Status | Co jest w projekcie |
-|---|---|---|
-| 1. Organizacja projektu i zespolu | Zrobione czesciowo | Repozytorium, struktura projektu, srodowisko Python i plik `requirements.txt`. Historia zmian zalezy od repozytorium Git. |
-| 2. Wersja podstawowa modelu | Zrobione | Notebook `notebooks/pipeline.ipynb` zawiera EDA, preprocessing, trening i ewaluacje modelu. |
-| 3. Struktura projektu i pipeline | Zrobione | Kod podzielony na moduly, pipeline Kedro zawiera pobieranie danych, preprocessing, trening i ewaluacje. |
-| 4. Udoskonalanie modelu | Zrobione | MLflow, AutoGluon, inzynieria cech, selekcja cech, GridSearchCV i porownanie kilku modeli. |
-| 5. Pipeline produkcyjny | Zrobione czesciowo | Lokalne API FastAPI, artefakty modelu, logowanie predykcji i prosty drift detection. Do dopracowania zostaje ewentualny Docker/chmura i bardziej rozbudowana optymalizacja. |
-| 6. MLOps / repozytoria | Zrobione czesciowo | MLflow i lokalne artefakty modelu. Brak DVC/Feast albo pelnego CI/CD/Continuous Training. |
-| 7. Dokumentacja | Zrobione czesciowo | README opisuje projekt, dane, pipeline, uruchomienie, wyniki, API i monitoring. Brakuje jeszcze diagramu architektury. |
-| 8. Podsumowanie i prezentacja | Do przygotowania | Wyniki i demo API sa gotowe jako material do prezentacji. |
+Repozytorium zawiera workflow GitHub Actions:
+
+```text
+.github/workflows/ci.yml
+```
+
+Workflow uruchamia sie po `push`, `pull_request` albo recznie z zakladki Actions w GitHubie. Jego zadaniem jest szybkie sprawdzenie, czy projekt nadal sklada sie technicznie po zmianach w kodzie.
+
+CI wykonuje:
+
+- instalacje zaleznosci z `requirements.txt`,
+- sprawdzenie skladni plikow Python w `src/`,
+- sprawdzenie, czy Kedro rejestruje pipeline'y `custom_pipeline` i `autogluon_pipeline`,
+- sprawdzenie, czy FastAPI buduje schemat OpenAPI i widzi endpointy `/health`, `/predict`, `/monitoring/summary`.
+
+CI nie trenuje modelu i nie pobiera danych z Kaggle. Te kroki sa ciezsze, wymagaja lokalnych danych lub tokenu Kaggle i sa uruchamiane recznie.
+
+Ponowne trenowanie modelu wykonuje sie komenda:
+
+```powershell
+python -B -m kedro run --pipelines custom_pipeline
+```
+
+Po takim uruchomieniu odswiezane sa artefakty w katalogu `models/`, m.in. model, preprocessor, lista cech oraz statystyki referencyjne do drift detection. AutoGluon mozna uruchomic osobno:
+
+```powershell
+python -B -m kedro run --pipelines autogluon_pipeline
+```
+
+Wdrozenie modelu w projekcie jest lokalne i odbywa sie przez FastAPI/Uvicorn:
+
+```powershell
+python -B -m uvicorn src.revrate.api.app:app --host 127.0.0.1 --port 8000
+```
+
+Po starcie API model jest dostepny przez endpoint `/predict`, a monitoring przez `/monitoring/summary`.
 
 ## Co jest gotowe do pokazania
 
