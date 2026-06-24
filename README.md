@@ -1,7 +1,33 @@
 # RevRate - przewidywanie cen samochodow
-Celem projektu jest predykcja ceny samochodu na podstawie danych z ogloszen sprzedazy samochodow w Polsce.
 
-Projekt zawiera baseline w notebooku, refaktoryzacje do pipeline'ow Kedro, eksperymenty MLflow, porownanie modeli, pipeline AutoGluon oraz lokalne API predykcyjne w FastAPI.
+RevRate to projekt uczenia maszynowego do predykcji ceny samochodu na podstawie danych z ogloszen sprzedazy samochodow w Polsce. Problem jest rozwiazywany jako regresja: model otrzymuje parametry pojazdu, a zwraca przewidywana cene w PLN.
+
+Projekt obejmuje kompletny przeplyw ML: baseline w notebooku, pipeline Kedro, eksperymenty MLflow, porownanie modeli, AutoML z AutoGluon, lokalne API FastAPI oraz prosty monitoring predykcji i driftu danych.
+
+## Spis tresci
+
+- [Opis problemu](#opis-problemu)
+- [Dane](#dane)
+- [Architektura systemu](#architektura-systemu)
+- [Struktura projektu](#struktura-projektu)
+- [Instalacja](#instalacja)
+- [Uruchomienie pipeline'ow](#uruchomienie-pipelineow)
+- [MLflow](#mlflow)
+- [API predykcyjne](#api-predykcyjne)
+- [Monitoring i drift danych](#monitoring-i-drift-danych)
+- [Wyniki modeli](#wyniki-modeli)
+- [Automatyzacja MLOps](#automatyzacja-mlops)
+- [Najwazniejsze pliki](#najwazniejsze-pliki)
+
+## Opis problemu
+
+Celem projektu jest oszacowanie ceny samochodu na rynku wtornym i pierwotnym na podstawie cech takich jak marka, model, rocznik, przebieg, moc, pojemnosc silnika, paliwo, skrzynia biegow, typ nadwozia, kolor oraz lokalizacja oferty.
+
+Model moze byc uzyty jako lokalna usluga wspierajaca szybka wycene pojazdu. Dla nowego ogloszenia API zwraca:
+
+- przewidywana cene w PLN,
+- informacje, czy dane wejsciowe odbiegaja od danych treningowych,
+- liste ostrzezen driftu danych.
 
 ## Dane
 
@@ -11,24 +37,37 @@ Zrodlem danych jest dataset Kaggle:
 bartoszpieniak/poland-cars-for-sale-dataset
 ```
 
-Pipeline pobiera plik `Car_sale_ads.csv` automatycznie, jezeli nie ma go lokalnie w katalogu `data/`. Dane lokalne nie sa wersjonowane w repozytorium.
+Pipeline korzysta z pliku:
 
-Do pobierania danych potrzebny jest token Kaggle. Przykladowy szkielet znajduje sie w pliku `kaggle.example.json`:
-
-```json
-{
-  "username": "twoj_login_kaggle",
-  "key": "twoj_klucz_api"
-}
+```text
+data/Car_sale_ads.csv
 ```
 
-Najprostsza opcja to umiescic prawdziwy plik jako:
+Jezeli plik nie istnieje lokalnie, node `download_raw_data` probuje pobrac dataset przez API Kaggle. Dane lokalne nie sa wersjonowane w Git, poniewaz plik CSV jest duzy.
+
+Najwazniejsze kolumny w danych:
+
+- `Price` - cena pojazdu, czyli zmienna docelowa,
+- `Currency` - waluta ceny; wartosci w EUR sa przeliczane na PLN,
+- `Condition`, `Vehicle_brand`, `Vehicle_model`, `Production_year`,
+- `Mileage_km`, `Power_HP`, `Displacement_cm3`,
+- `Fuel_type`, `CO2_emissions`, `Drive`, `Transmission`,
+- `Type`, `Doors_number`, `Colour`, `Offer_location`.
+
+Do pobierania danych z Kaggle potrzebny jest token API. Przykladowy szkielet znajduje sie w pliku:
+
+```text
+kaggle.example.json
+```
+
+Najprostsza konfiguracja na Windows:
 
 ```powershell
-%USERPROFILE%\.kaggle\kaggle.json
+mkdir $env:USERPROFILE\.kaggle
+copy kaggle.json $env:USERPROFILE\.kaggle\kaggle.json
 ```
 
-Alternatywnie mozna trzymac go lokalnie w katalogu projektu jako `kaggle.json` i ustawic przed uruchomieniem:
+Alternatywnie mozna trzymac prawdziwy plik `kaggle.json` w katalogu projektu i ustawic:
 
 ```powershell
 $env:KAGGLE_CONFIG_DIR = (Get-Location).Path
@@ -36,31 +75,79 @@ $env:KAGGLE_CONFIG_DIR = (Get-Location).Path
 
 Prawdziwy `kaggle.json` jest ignorowany przez Git i nie powinien trafic do repozytorium.
 
+## Architektura systemu
+
+Wizualizacja architektury znajduje sie w pliku `diagram.png`.
+
+![Diagram architektury](diagram.png)
+
+Przeplyw systemu:
+
+1. Dane sa pobierane z Kaggle albo czytane lokalnie z `data/Car_sale_ads.csv`.
+2. Kedro uruchamia pipeline treningowy.
+3. Custom pipeline wykonuje czyszczenie, imputacje brakow, inzynierie cech, selekcje cech, preprocessing, strojenie `RandomForestRegressor` i ewaluacje.
+4. Pipeline AutoGluon trenuje i porownuje kilka modeli AutoML.
+5. MLflow zapisuje parametry, metryki, wykresy, leaderboardy i artefakty modeli.
+6. Wytrenowany model custom jest zapisywany w `models/` i udostepniany przez lokalne API FastAPI.
+7. API zapisuje predykcje do `logs/predictions.csv` i porownuje requesty ze statystykami referencyjnymi z `models/reference_stats.json`.
+8. GitHub Actions uruchamia szybkie kontrole techniczne projektu po zmianach w repozytorium.
+
 ## Struktura projektu
 
 ```text
-conf/base/parameters.yml                      konfiguracja pipeline'ow
 conf/base/catalog.yml                         definicje artefaktow Kedro
-notebooks/pipeline.ipynb                      notebook baseline
+conf/base/parameters.yml                      konfiguracja pipeline'ow
+notebooks/pipeline.ipynb                      notebook baseline: EDA, preprocessing, model bazowy, ewaluacja
+src/revrate/pipeline_registry.py              rejestr pipeline'ow Kedro
 src/revrate/pipelines/custom_pipeline/        reczny pipeline ML
 src/revrate/pipelines/autogluon_pipeline/     pipeline AutoML
 src/revrate/api/app.py                        lokalne API FastAPI
-models/                                       lokalne modele, ignorowane przez Git
+.github/workflows/ci.yml                      workflow CI
+diagram.png                                   diagram architektury
 data/                                         lokalne dane, ignorowane przez Git
+models/                                       lokalne modele, ignorowane przez Git
+logs/                                         lokalne logi predykcji, ignorowane przez Git
 mlflow.db                                     lokalna baza MLflow, ignorowana przez Git
 ```
 
-## Uruchomienie
+## Instalacja
 
-Instalacja srodowiska:
+Wymagane srodowisko:
+
+- Python,
+- pip,
+- token Kaggle, jezeli dane maja byc pobierane automatycznie,
+- system Windows lub inny system z dostepem do Pythona i zaleznosci z `requirements.txt`.
+
+Instalacja srodowiska lokalnego:
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\activate
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Uruchomienie recznego pipeline'u:
+Zaleznosci projektu obejmuja m.in.:
+
+- Kedro,
+- pandas,
+- scikit-learn,
+- MLflow,
+- AutoGluon,
+- FastAPI,
+- Uvicorn,
+- Kaggle API.
+
+## Uruchomienie pipeline'ow
+
+Domyslnym pipeline'em Kedro jest `custom_pipeline`, wiec ponizsza komenda uruchamia reczny wariant treningu:
+
+```powershell
+python -B -m kedro run
+```
+
+Jawne uruchomienie custom pipeline:
 
 ```powershell
 python -B -m kedro run --pipelines custom_pipeline
@@ -72,27 +159,23 @@ Uruchomienie pipeline'u AutoGluon:
 python -B -m kedro run --pipelines autogluon_pipeline
 ```
 
-Domyslny pipeline Kedro to `custom_pipeline`, wiec ponizsza komenda uruchamia reczny wariant:
+### Custom pipeline
 
-```powershell
-python -B -m kedro run
-```
+Custom pipeline obejmuje:
 
-## Pipeline custom
-
-Reczny pipeline obejmuje:
-
-- pobieranie danych z Kaggle,
-- czyszczenie danych,
-- uzupelnianie brakow,
-- inzynierie cech,
-- selekcje cech,
-- preprocessing,
-- trening modelu `RandomForestRegressor`,
+- pobieranie danych z Kaggle albo uzycie lokalnego CSV,
+- czyszczenie danych i usuwanie obserwacji odstajacych,
+- przeliczenie cen z EUR na PLN,
+- filtrowanie rocznikow, przebiegu, mocy i typow paliwa,
+- imputacje brakow na podstawie podobnych samochodow oraz imputery mediany i dominanty,
+- inzynierie cech: `car_age`, `mileage_per_year`, `power_to_displacement`, `age_x_mileage`, `voivodeship`,
+- selekcje cech na podstawie waznosci z Random Forest,
+- preprocessing numeryczny i kategoryczny,
 - strojenie hiperparametrow przez `GridSearchCV`,
-- ewaluacje na zbiorze treningowym i testowym,
-- zapis artefaktow modelu do katalogu `models/`,
-- logowanie eksperymentow w MLflow.
+- trening `RandomForestRegressor`,
+- ewaluacje metrykami RMSE, MAE i R2,
+- zapis artefaktow do katalogu `models/`,
+- logowanie eksperymentow do MLflow.
 
 Zapisywane artefakty:
 
@@ -103,29 +186,173 @@ models/custom_top_features.pkl
 models/reference_stats.json
 ```
 
-## Pipeline AutoGluon
+### Pipeline AutoGluon
 
 Pipeline AutoGluon obejmuje:
 
 - pobieranie tych samych danych,
 - preprocessing i inzynierie cech,
 - podzial train/test,
-- trening modeli AutoGluon,
+- trening modeli AutoML,
 - ewaluacje najlepszego modelu,
-- logowanie wynikow i artefaktow w MLflow.
+- zapis modeli AutoGluon w `models/autogluon_models/`,
+- logowanie leaderboardu, metryk i artefaktow w MLflow.
 
-W obecnej konfiguracji AutoGluon porownuje:
+W obecnej konfiguracji AutoGluon porownuje m.in.:
 
-- `KNeighbors`,
-- `RandomForest`,
-- `ExtraTrees`,
-- `WeightedEnsemble`.
+- KNeighbors,
+- RandomForest,
+- ExtraTrees,
+- WeightedEnsemble.
 
 Modele AutoGluon sa zapisywane w katalogach:
 
 ```text
 models/autogluon_models/run_YYYYMMDD_HHMMSS/
 ```
+
+## MLflow
+
+Eksperymenty sa logowane lokalnie przez MLflow. Domyslny tracking URI jest ustawiony na:
+
+```text
+sqlite:///mlflow.db
+```
+
+Uruchomienie interfejsu MLflow:
+
+```powershell
+python -B -m mlflow ui --backend-store-uri sqlite:///mlflow.db
+```
+
+Po starcie UI jest dostepne pod adresem:
+
+```text
+http://127.0.0.1:5000
+```
+
+W custom pipeline logowane sa m.in.:
+
+- najlepsze hiperparametry,
+- metryki treningowe i testowe,
+- liczba probek i cech,
+- wykres predykcji wzgledem wartosci rzeczywistych,
+- histogram reszt,
+- waznosci cech,
+- model zarejestrowany jako `revrate_custom_rf`.
+
+W pipeline AutoGluon logowane sa:
+
+- konfiguracja AutoGluon,
+- leaderboard modeli,
+- metryki testowe,
+- katalog artefaktow AutoGluon.
+
+## API predykcyjne
+
+Po uruchomieniu `custom_pipeline` mozna wystartowac lokalne API:
+
+```powershell
+python -B -m uvicorn src.revrate.api.app:app --host 127.0.0.1 --port 8000
+```
+
+Dostepne endpointy:
+
+```text
+GET  /health
+POST /predict
+GET  /monitoring/summary
+```
+
+Swagger UI:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+API korzysta z artefaktow zapisanych przez `custom_pipeline`, dlatego przed wykonaniem predykcji powinny istniec:
+
+```text
+models/custom_model.pkl
+models/custom_preprocessor.pkl
+models/custom_top_features.pkl
+models/reference_stats.json
+```
+
+Endpoint `/health` pozwala sprawdzic, czy API dziala i czy statystyki referencyjne sa dostepne. Model jest ladowany przy pierwszym wywolaniu `/predict`, dlatego pierwsza predykcja moze byc wolniejsza.
+
+Przykladowe zapytanie:
+
+```powershell
+$body = @{
+  Condition = "Used"
+  Vehicle_brand = "Toyota"
+  Vehicle_model = "Corolla"
+  Production_year = 2018
+  Mileage_km = 85000
+  Power_HP = 132
+  Displacement_cm3 = 1598
+  Fuel_type = "Gasoline"
+  CO2_emissions = 139
+  Drive = "Front wheels"
+  Transmission = "Manual"
+  Type = "sedan"
+  Doors_number = 4
+  Colour = "white"
+  voivodeship = "mazowieckie"
+} | ConvertTo-Json
+
+Invoke-RestMethod `
+  -Uri "http://127.0.0.1:8000/predict" `
+  -Method Post `
+  -ContentType "application/json" `
+  -Body $body
+```
+
+Odpowiedz `/predict` zawiera:
+
+```text
+predicted_price
+currency
+drift_detected
+drift_warnings
+```
+
+## Monitoring i drift danych
+
+API zapisuje kazda predykcje do lokalnego pliku:
+
+```text
+logs/predictions.csv
+```
+
+W logu sa zapisywane:
+
+- timestamp predykcji,
+- przewidziana cena,
+- czas obslugi requestu,
+- informacja, czy wykryto drift,
+- lista ostrzezen driftu,
+- wejscie requestu jako JSON.
+
+Drift detection opiera sie na pliku:
+
+```text
+models/reference_stats.json
+```
+
+Plik jest generowany przez `custom_pipeline` i zawiera statystyki referencyjne danych treningowych. API stosuje proste reguly:
+
+- dla cech numerycznych sprawdza, czy wartosc wychodzi poza zakres percentyli `p01-p99`,
+- dla cech kategorycznych sprawdza, czy wartosc wystepowala w danych treningowych.
+
+Podsumowanie monitoringu:
+
+```text
+GET /monitoring/summary
+```
+
+Endpoint zwraca m.in. liczbe predykcji, liczbe predykcji z wykrytym driftem, wspolczynnik driftu, czas ostatniej predykcji i sciezke do pliku logow.
 
 ## Wyniki modeli
 
@@ -141,86 +368,7 @@ Metryki dla zbioru testowego:
 
 Wniosek: najlepszy wynik na zbiorze testowym uzyskal recznie przygotowany `RandomForestRegressor` po selekcji cech i strojeniu hiperparametrow przez `GridSearchCV`.
 
-## MLflow
-
-Eksperymenty sa logowane lokalnie przez MLflow i zapisywane w pliku:
-
-```text
-mlflow.db
-```
-
-W custom pipeline logowane sa m.in. parametry modelu, metryki, wykresy ewaluacyjne, waznosci cech oraz artefakt modelu. W AutoGluon logowany jest leaderboard, metryki i katalog modelu.
-
-## API
-
-Po uruchomieniu `custom_pipeline` mozna wystartowac lokalne API predykcyjne:
-
-```powershell
-python -B -m uvicorn src.revrate.api.app:app --host 127.0.0.1 --port 8000
-```
-
-Dostepne endpointy:
-
-```text
-GET  /health
-POST /predict
-GET  /monitoring/summary
-```
-
-Dokumentacja Swagger UI:
-
-```text
-http://127.0.0.1:8000/docs
-```
-
-API korzysta z artefaktow zapisanych przez `custom_pipeline`, dlatego przed wykonaniem predykcji trzeba miec wygenerowane pliki w katalogu `models/`. Dokumentacja `/docs` i endpoint `/health` uruchamiaja sie bez ladowania modelu; model jest ladowany dopiero przy pierwszym wywolaniu `/predict`.
-
-Odpowiedz `/predict` zawiera:
-
-```text
-predicted_price
-currency
-drift_detected
-drift_warnings
-```
-
-## Monitoring API i drift danych
-
-API zapisuje kazda predykcje do lokalnego pliku:
-
-```text
-logs/predictions.csv
-```
-
-W logu zapisywane sa:
-
-- czas predykcji,
-- przewidziana cena,
-- czas obslugi requestu,
-- informacja czy wykryto drift,
-- lista ostrzezen driftu,
-- dane wejsciowe requestu.
-
-Prosty drift detection opiera sie na pliku:
-
-```text
-models/reference_stats.json
-```
-
-Plik jest generowany przez `custom_pipeline` i zawiera statystyki referencyjne danych treningowych. API porownuje nowe requesty z tym punktem odniesienia:
-
-- dla cech numerycznych sprawdza, czy wartosc wychodzi poza zakres `p01-p99`,
-- dla cech kategorycznych sprawdza, czy wartosc wystepowala w danych treningowych.
-
-Podsumowanie monitoringu mozna sprawdzic przez:
-
-```text
-GET /monitoring/summary
-```
-
-Endpoint zwraca m.in. liczbe predykcji, liczbe predykcji z wykrytym driftem, wspolczynnik driftu i czas ostatniej predykcji.
-
-## Automatyzacja projektu
+## Automatyzacja MLOps
 
 Repozytorium zawiera workflow GitHub Actions:
 
@@ -228,30 +376,28 @@ Repozytorium zawiera workflow GitHub Actions:
 .github/workflows/ci.yml
 ```
 
-Workflow uruchamia sie po `push`, `pull_request` albo recznie z zakladki Actions w GitHubie. Jego zadaniem jest szybkie sprawdzenie, czy projekt nadal sklada sie technicznie po zmianach w kodzie.
+Workflow uruchamia sie po:
 
-CI wykonuje:
+- `push`,
+- `pull_request`,
+- recznym uruchomieniu przez `workflow_dispatch`.
 
-- instalacje zaleznosci z `requirements.txt`,
-- sprawdzenie skladni plikow Python w `src/`,
-- sprawdzenie, czy Kedro rejestruje pipeline'y `custom_pipeline` i `autogluon_pipeline`,
-- sprawdzenie, czy FastAPI buduje schemat OpenAPI i widzi endpointy `/health`, `/predict`, `/monitoring/summary`.
+CI wykonuje szybkie kontrole techniczne:
+
+- instaluje zaleznosci z `requirements.txt`,
+- sprawdza skladnie plikow Python w `src/`,
+- sprawdza, czy Kedro rejestruje pipeline'y `custom_pipeline`, `autogluon_pipeline` i `__default__`,
+- sprawdza, czy FastAPI buduje schemat OpenAPI i zawiera endpointy `/health`, `/predict`, `/monitoring/summary`.
 
 CI nie trenuje modelu i nie pobiera danych z Kaggle. Te kroki sa ciezsze, wymagaja lokalnych danych lub tokenu Kaggle i sa uruchamiane recznie.
 
-Ponowne trenowanie modelu wykonuje sie komenda:
+Ponowne trenowanie modelu:
 
 ```powershell
 python -B -m kedro run --pipelines custom_pipeline
 ```
 
-Po takim uruchomieniu odswiezane sa artefakty w katalogu `models/`, m.in. model, preprocessor, lista cech oraz statystyki referencyjne do drift detection. AutoGluon mozna uruchomic osobno:
-
-```powershell
-python -B -m kedro run --pipelines autogluon_pipeline
-```
-
-Wdrozenie modelu w projekcie jest lokalne i odbywa sie przez FastAPI/Uvicorn:
+Lokalne wdrozenie modelu:
 
 ```powershell
 python -B -m uvicorn src.revrate.api.app:app --host 127.0.0.1 --port 8000
@@ -259,25 +405,25 @@ python -B -m uvicorn src.revrate.api.app:app --host 127.0.0.1 --port 8000
 
 Po starcie API model jest dostepny przez endpoint `/predict`, a monitoring przez `/monitoring/summary`.
 
-## Co jest gotowe do pokazania
-
-- uruchomienie `custom_pipeline`,
-- uruchomienie `autogluon_pipeline`,
-- porownanie wynikow kilku modeli,
-- lokalne API FastAPI po wytrenowaniu custom modelu,
-- monitoring predykcji i prosty drift detection,
-- zapis modeli i eksperymentow.
-
 ## Najwazniejsze pliki
 
 ```text
-Wymagania.txt
 README.md
 requirements.txt
 kaggle.example.json
+diagram.png
 conf/base/parameters.yml
+conf/base/catalog.yml
+src/revrate/pipeline_registry.py
 src/revrate/pipelines/custom_pipeline/nodes.py
 src/revrate/pipelines/autogluon_pipeline/nodes.py
 src/revrate/api/app.py
 notebooks/pipeline.ipynb
 ```
+
+## Uwagi praktyczne
+
+- Katalogi `data/`, `models/`, `logs/`, `mlruns/` oraz plik `mlflow.db` sa lokalnymi artefaktami pracy i nie powinny byc commitowane.
+- Plik `models/custom_model.pkl` moze byc bardzo duzy, dlatego pierwsze ladowanie modelu w API moze trwac kilka sekund.
+- Jezeli `data/Car_sale_ads.csv` juz istnieje, pipeline uzywa lokalnej kopii i nie pobiera danych ponownie.
+- Jezeli chcesz wymusic ponowne pobranie danych, zmien `custom.data_download.force_download` w `conf/base/parameters.yml` na `true`.
