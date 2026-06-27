@@ -25,7 +25,7 @@ async def lifespan(_app: FastAPI):
     """Load model and feature metadata on startup."""
     # pylint: disable-next=global-statement
     global MODEL, CATEGORICAL_COLS, FEATURE_ORDER
-    MODEL = joblib.load(MODELS_DIR / "custom_model.pkl")
+    MODEL = joblib.load(MODELS_DIR / "xgboost_model_nb.pkl")
     booster = MODEL.get_booster()
     FEATURE_ORDER = booster.feature_names
     CATEGORICAL_COLS = [

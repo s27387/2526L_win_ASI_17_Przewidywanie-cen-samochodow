@@ -57,7 +57,7 @@ def generate_options():
 def check_models():
     """Verify that the required model files exist."""
     models_dir = ROOT / "models"
-    required = ["custom_model.pkl"]
+    required = ["xgboost_model_nb.pkl"]
     missing = [f for f in required if not (models_dir / f).exists()]
     if missing:
         print(f"Blad: Brak plikow modelu w {models_dir}:")
