@@ -5,6 +5,7 @@ from kedro.pipeline import Pipeline
 
 
 def register_pipelines() -> dict[str, Pipeline]:
-    pipelines = find_pipelines(raise_errors=True)
-    pipelines["__default__"] = pipelines["custom_pipeline"]
+    pipelines = find_pipelines(raise_errors=False)
+    if "custom_pipeline" in pipelines:
+        pipelines["__default__"] = pipelines["custom_pipeline"]
     return pipelines

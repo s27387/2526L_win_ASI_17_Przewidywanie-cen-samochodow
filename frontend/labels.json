@@ -1,0 +1,45 @@
+{
+  "type": {
+    "city_cars": "City Cars",
+    "small_cars": "Small Cars",
+    "station_wagon": "Station Wagon",
+    "compact": "Compact",
+    "sedan": "Sedan",
+    "SUV": "SUV",
+    "coupe": "Coupe",
+    "convertible": "Convertible",
+    "minivan": "Minivan"
+  },
+  "drive": {
+    "Front wheels": "Front-Wheel Drive",
+    "Rear wheels": "Rear-Wheel Drive",
+    "4x4 (permanent)": "4x4 Permanent",
+    "4x4 (attached automatically)": "4x4 Auto",
+    "4x4 (attached manually)": "4x4 Manual"
+  },
+  "fuel": {
+    "Gasoline": "Benzyna",
+    "Diesel": "Diesel",
+    "Gasoline + LPG": "Benzyna + LPG"
+  },
+  "colour": {
+    "beige": "Bezowy",
+    "black": "Czarny",
+    "blue": "Niebieski",
+    "brown": "Brazowy",
+    "burgundy": "Bordowy",
+    "golden": "Zloty",
+    "gray": "Szary",
+    "green": "Zielony",
+    "other": "Inny",
+    "red": "Czerwony",
+    "silver": "Srebrny",
+    "violet": "Fioletowy",
+    "white": "Bialy",
+    "yellow": "Zolty"
+  },
+  "condition": {
+    "New": "Nowy",
+    "Used": "Uzywany"
+  }
+}

@@ -11,3 +11,6 @@ fastapi
 uvicorn
 autogluon
 kaggle
+xgboost
+streamlit
+httpx

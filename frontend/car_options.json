@@ -1,0 +1,5031 @@
+{
+  "hierarchy": {
+    "Abarth": {
+      "124": [
+        "Convertible"
+      ],
+      "500": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "595": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Small Cars"
+      ],
+      "Grande Punto": [
+        "City Cars",
+        "Compact"
+      ],
+      "Other": [
+        "City Cars"
+      ]
+    },
+    "Acura": {
+      "MDX": [
+        "SUV"
+      ],
+      "RDX": [
+        "SUV"
+      ],
+      "RL": [
+        "Sedan"
+      ],
+      "TL": [
+        "Sedan"
+      ],
+      "TSX": [
+        "Sedan"
+      ]
+    },
+    "Aixam": {
+      "A721": [
+        "Small Cars"
+      ],
+      "A741": [
+        "Small Cars"
+      ],
+      "A751": [
+        "Small Cars"
+      ],
+      "City": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Coupe": [
+        "Small Cars"
+      ],
+      "Crossline": [
+        "Coupe",
+        "Small Cars"
+      ],
+      "Crossover": [
+        "Small Cars"
+      ],
+      "GTO": [
+        "Small Cars"
+      ],
+      "Other": [
+        "Small Cars"
+      ],
+      "Roadline": [
+        "Small Cars"
+      ],
+      "Scouty": [
+        "Small Cars"
+      ],
+      "Scouty R": [
+        "Small Cars"
+      ]
+    },
+    "Alfa Romeo": {
+      "145": [
+        "Compact"
+      ],
+      "146": [
+        "Compact"
+      ],
+      "147": [
+        "City Cars",
+        "Compact",
+        "Coupe"
+      ],
+      "155": [
+        "Sedan"
+      ],
+      "156": [
+        "City Cars",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "159": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "164": [
+        "Sedan"
+      ],
+      "166": [
+        "Sedan"
+      ],
+      "Brera": [
+        "Compact",
+        "Coupe"
+      ],
+      "Crosswagon": [
+        "SUV",
+        "Station Wagon"
+      ],
+      "GT": [
+        "Coupe",
+        "Sedan"
+      ],
+      "GTV": [
+        "Coupe"
+      ],
+      "Giulia": [
+        "SUV",
+        "Sedan"
+      ],
+      "Giulietta": [
+        "City Cars",
+        "Compact",
+        "Sedan"
+      ],
+      "Mito": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "Other": [
+        "Convertible"
+      ],
+      "Spider": [
+        "Convertible"
+      ],
+      "Sportwagon": [
+        "Station Wagon"
+      ],
+      "Stelvio": [
+        "SUV",
+        "Station Wagon"
+      ]
+    },
+    "Aston Martin": {
+      "DB7": [
+        "Coupe"
+      ]
+    },
+    "Audi": {
+      "100": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "80": [
+        "Convertible",
+        "Coupe",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "90": [
+        "Sedan"
+      ],
+      "A1": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "SUV",
+        "Small Cars"
+      ],
+      "A2": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Small Cars"
+      ],
+      "A3": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "A4": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "A4 Allroad": [
+        "City Cars",
+        "Compact",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "A5": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "A6": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "A6 Allroad": [
+        "SUV",
+        "Station Wagon"
+      ],
+      "A7": [
+        "Compact",
+        "Coupe",
+        "Sedan"
+      ],
+      "A8": [
+        "City Cars",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Cabriolet": [
+        "City Cars",
+        "Convertible"
+      ],
+      "Coupe": [
+        "Coupe"
+      ],
+      "Other": [
+        "Coupe"
+      ],
+      "Q2": [
+        "City Cars",
+        "Compact",
+        "SUV"
+      ],
+      "Q3": [
+        "City Cars",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Q5": [
+        "Compact",
+        "Minivan",
+        "SUV"
+      ],
+      "Q7": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Q8": [
+        "SUV"
+      ],
+      "RS Q3": [
+        "Compact",
+        "SUV"
+      ],
+      "RS3": [
+        "Compact",
+        "Sedan"
+      ],
+      "RS4": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "RS5": [
+        "Coupe",
+        "Sedan"
+      ],
+      "RS6": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "RS7": [
+        "Sedan"
+      ],
+      "S1": [
+        "City Cars",
+        "Compact"
+      ],
+      "S3": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "S4": [
+        "Convertible",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "S5": [
+        "Convertible",
+        "Coupe",
+        "Sedan"
+      ],
+      "S6": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "S7": [
+        "Coupe",
+        "Sedan"
+      ],
+      "S8": [
+        "Sedan"
+      ],
+      "SQ5": [
+        "SUV"
+      ],
+      "TT": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Small Cars"
+      ],
+      "TT RS": [
+        "Coupe"
+      ],
+      "TT S": [
+        "City Cars",
+        "Convertible",
+        "Coupe"
+      ]
+    },
+    "Austin": {
+      "Other": [
+        "City Cars",
+        "Minivan"
+      ]
+    },
+    "BMW": {
+      "1M": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "3GT": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "5GT": [
+        "Compact",
+        "Coupe",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "6GT": [
+        "Compact",
+        "Coupe",
+        "Sedan"
+      ],
+      "M2": [
+        "Coupe"
+      ],
+      "M3": [
+        "Convertible",
+        "Coupe",
+        "Sedan"
+      ],
+      "M4": [
+        "Coupe"
+      ],
+      "M5": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "M6": [
+        "Convertible",
+        "Coupe"
+      ],
+      "Other": [
+        "Coupe",
+        "Minivan",
+        "Sedan"
+      ],
+      "Seria 1": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Seria 2": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Seria 3": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Seria 4": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Sedan",
+        "Small Cars"
+      ],
+      "Seria 5": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Seria 6": [
+        "Convertible",
+        "Coupe",
+        "Sedan"
+      ],
+      "Seria 7": [
+        "Compact",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Seria 8": [
+        "Coupe"
+      ],
+      "X1": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "X2": [
+        "City Cars",
+        "Compact",
+        "SUV"
+      ],
+      "X3": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "X3 M": [
+        "SUV"
+      ],
+      "X4": [
+        "SUV"
+      ],
+      "X5": [
+        "City Cars",
+        "Minivan",
+        "SUV"
+      ],
+      "X5 M": [
+        "SUV"
+      ],
+      "X6": [
+        "SUV",
+        "Sedan"
+      ],
+      "X6 M": [
+        "SUV"
+      ],
+      "X7": [
+        "SUV"
+      ],
+      "Z3": [
+        "Convertible",
+        "Coupe"
+      ],
+      "Z4": [
+        "Convertible"
+      ]
+    },
+    "Baic": {
+      "Senova X25": [
+        "Minivan"
+      ],
+      "Senova X35": [
+        "SUV"
+      ],
+      "Senova X55": [
+        "SUV"
+      ]
+    },
+    "Bentley": {
+      "Continental Flying Spur": [
+        "Sedan"
+      ],
+      "Continental GT": [
+        "Convertible",
+        "Coupe"
+      ]
+    },
+    "Buick": {
+      "Century": [
+        "Sedan"
+      ],
+      "Enclave": [
+        "Minivan",
+        "SUV"
+      ],
+      "Lacrosse": [
+        "Sedan"
+      ],
+      "Other": [
+        "SUV"
+      ],
+      "Park Avenue": [
+        "Sedan"
+      ],
+      "Reatta": [
+        "Coupe"
+      ],
+      "Regal": [
+        "Sedan"
+      ],
+      "Rendezvous": [
+        "SUV"
+      ],
+      "Riviera": [
+        "Coupe"
+      ]
+    },
+    "Cadillac": {
+      "ATS": [
+        "Sedan"
+      ],
+      "BLS": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Brougham": [
+        "Sedan"
+      ],
+      "CT6": [
+        "Sedan"
+      ],
+      "CTS": [
+        "Coupe",
+        "Sedan"
+      ],
+      "DTS": [
+        "Sedan"
+      ],
+      "Deville": [
+        "Sedan"
+      ],
+      "Eldorado": [
+        "Coupe"
+      ],
+      "Escalade": [
+        "SUV"
+      ],
+      "SRX": [
+        "SUV"
+      ],
+      "STS": [
+        "Sedan"
+      ],
+      "Seville": [
+        "Sedan"
+      ],
+      "XLR": [
+        "Convertible"
+      ],
+      "XT5": [
+        "SUV"
+      ],
+      "XTS": [
+        "Sedan"
+      ]
+    },
+    "Casalini": {
+      "M14": [
+        "Compact"
+      ],
+      "Sulky": [
+        "Small Cars"
+      ]
+    },
+    "Chatenet": {
+      "CH22 Barooder": [
+        "Small Cars"
+      ],
+      "CH26": [
+        "Compact",
+        "Small Cars"
+      ],
+      "CH32": [
+        "Small Cars"
+      ],
+      "Media": [
+        "Small Cars"
+      ]
+    },
+    "Chevrolet": {
+      "Alero": [
+        "Sedan"
+      ],
+      "Astro": [
+        "Minivan"
+      ],
+      "Avalanche": [
+        "SUV"
+      ],
+      "Aveo": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Small Cars"
+      ],
+      "Blazer": [
+        "SUV"
+      ],
+      "Camaro": [
+        "Convertible",
+        "Coupe",
+        "Sedan"
+      ],
+      "Caprice": [
+        "Station Wagon"
+      ],
+      "Captiva": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Chevy Van": [
+        "Minivan"
+      ],
+      "Colorado": [
+        "SUV"
+      ],
+      "Corvette": [
+        "Convertible",
+        "Coupe"
+      ],
+      "Cruze": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Epica": [
+        "Sedan"
+      ],
+      "Equinox": [
+        "Minivan",
+        "SUV"
+      ],
+      "Evanda": [
+        "Sedan"
+      ],
+      "Express": [
+        "Minivan"
+      ],
+      "HHR": [
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Impala": [
+        "Coupe",
+        "Sedan"
+      ],
+      "K1500": [
+        "SUV"
+      ],
+      "Kalos": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "Lacetti": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Malibu": [
+        "Sedan"
+      ],
+      "Matiz": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Nubira": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Orlando": [
+        "Minivan",
+        "SUV"
+      ],
+      "Other": [
+        "Minivan"
+      ],
+      "Rezzo": [
+        "Minivan"
+      ],
+      "S-10": [
+        "SUV"
+      ],
+      "Silverado": [
+        "Minivan",
+        "SUV"
+      ],
+      "Spark": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Suburban": [
+        "SUV"
+      ],
+      "Tacuma": [
+        "Minivan"
+      ],
+      "Tahoe": [
+        "SUV"
+      ],
+      "Trailblazer": [
+        "SUV"
+      ],
+      "Trans Sport": [
+        "Minivan"
+      ],
+      "Traverse": [
+        "SUV"
+      ],
+      "Trax": [
+        "Compact",
+        "SUV"
+      ],
+      "Venture": [
+        "Minivan"
+      ]
+    },
+    "Chrysler": {
+      "200": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Sedan"
+      ],
+      "300": [
+        "Sedan"
+      ],
+      "300C": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "300M": [
+        "Sedan"
+      ],
+      "300s": [
+        "Sedan"
+      ],
+      "Aspen": [
+        "SUV"
+      ],
+      "Crossfire": [
+        "Compact",
+        "Convertible",
+        "Coupe"
+      ],
+      "Grand Voyager": [
+        "Minivan"
+      ],
+      "Le Baron": [
+        "Convertible"
+      ],
+      "Neon": [
+        "City Cars",
+        "Sedan"
+      ],
+      "New Yorker": [
+        "Sedan"
+      ],
+      "PT Cruiser": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Pacifica": [
+        "Minivan",
+        "SUV"
+      ],
+      "Prowler": [
+        "Convertible"
+      ],
+      "Sebring": [
+        "Convertible",
+        "Sedan"
+      ],
+      "Stratus": [
+        "Convertible",
+        "Sedan"
+      ],
+      "Town & Country": [
+        "Minivan",
+        "SUV"
+      ],
+      "Vision": [
+        "Sedan"
+      ],
+      "Voyager": [
+        "Minivan",
+        "SUV"
+      ]
+    },
+    "Citroën": {
+      "AX": [
+        "Small Cars"
+      ],
+      "BX": [
+        "Compact",
+        "Sedan"
+      ],
+      "Berlingo": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "C-Crosser": [
+        "SUV"
+      ],
+      "C-Elysée": [
+        "Compact",
+        "Sedan"
+      ],
+      "C1": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Small Cars"
+      ],
+      "C2": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "C3": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Small Cars"
+      ],
+      "C3 Aircross": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Small Cars"
+      ],
+      "C3 Picasso": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "C3 Pluriel": [
+        "City Cars",
+        "Convertible"
+      ],
+      "C4": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "C4 Aircross": [
+        "Compact",
+        "Minivan",
+        "SUV"
+      ],
+      "C4 Cactus": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "C4 Grand Picasso": [
+        "Minivan",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "C4 Picasso": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "C4 SpaceTourer": [
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "C5": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "C5 Aircross": [
+        "Compact",
+        "Minivan",
+        "SUV"
+      ],
+      "C6": [
+        "Sedan"
+      ],
+      "C8": [
+        "Minivan",
+        "Station Wagon"
+      ],
+      "DS": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "DS3": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Small Cars"
+      ],
+      "DS4": [
+        "City Cars",
+        "Compact",
+        "Sedan"
+      ],
+      "DS5": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Evasion": [
+        "Minivan"
+      ],
+      "Jumper": [
+        "Compact",
+        "Convertible",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Jumpy Combi": [
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Nemo": [
+        "City Cars",
+        "Minivan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Other": [
+        "Compact",
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Saxo": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "SpaceTourer": [
+        "Minivan"
+      ],
+      "XM": [
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Xantia": [
+        "Compact",
+        "Sedan"
+      ],
+      "Xsara": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Minivan",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Xsara Picasso": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "ZX": [
+        "Small Cars",
+        "Station Wagon"
+      ]
+    },
+    "Cupra": {
+      "Ateca": [
+        "SUV"
+      ],
+      "Formentor": [
+        "SUV"
+      ],
+      "Leon": [
+        "Compact",
+        "Station Wagon"
+      ]
+    },
+    "DFSK": {
+      "Fengon 5": [
+        "SUV"
+      ],
+      "Glory 580": [
+        "SUV"
+      ]
+    },
+    "DS Automobiles": {
+      "DS 3": [
+        "City Cars"
+      ],
+      "DS 3 Crossback": [
+        "City Cars",
+        "Compact",
+        "SUV",
+        "Small Cars"
+      ],
+      "DS 4": [
+        "Compact"
+      ],
+      "DS 4 Crossback": [
+        "Compact"
+      ],
+      "DS 5": [
+        "Compact",
+        "Minivan",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "DS 7 Crossback": [
+        "SUV"
+      ]
+    },
+    "Dacia": {
+      "1300": [
+        "Sedan"
+      ],
+      "Dokker": [
+        "Compact",
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Dokker Van": [
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Duster": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Lodgy": [
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Logan": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Logan Van": [
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Sandero": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Sandero Stepway": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Small Cars"
+      ]
+    },
+    "Daewoo": {
+      "Chairman": [
+        "Sedan"
+      ],
+      "Espero": [
+        "Sedan"
+      ],
+      "Evanda": [
+        "Sedan"
+      ],
+      "Kalos": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Lacetti": [
+        "Compact"
+      ],
+      "Lanos": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Small Cars"
+      ],
+      "Leganza": [
+        "Sedan"
+      ],
+      "MUSSO": [
+        "SUV"
+      ],
+      "Matiz": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Nubira": [
+        "Compact",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Other": [
+        "Station Wagon"
+      ],
+      "Rezzo": [
+        "Compact",
+        "Minivan"
+      ],
+      "Tacuma": [
+        "Minivan"
+      ],
+      "Tico": [
+        "Small Cars"
+      ]
+    },
+    "Daihatsu": {
+      "Charade": [
+        "City Cars"
+      ],
+      "Cuore": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Feroza": [
+        "SUV"
+      ],
+      "Materia": [
+        "City Cars",
+        "Minivan"
+      ],
+      "Rocky": [
+        "SUV"
+      ],
+      "Sirion": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Terios": [
+        "City Cars",
+        "Minivan",
+        "SUV"
+      ],
+      "Trevis": [
+        "Small Cars"
+      ],
+      "YRV": [
+        "City Cars",
+        "Compact"
+      ]
+    },
+    "Dodge": {
+      "Avenger": [
+        "Sedan"
+      ],
+      "Caliber": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Caravan": [
+        "Minivan"
+      ],
+      "Challenger": [
+        "Coupe",
+        "Sedan"
+      ],
+      "Charger": [
+        "Coupe",
+        "Sedan"
+      ],
+      "Dakota": [
+        "SUV"
+      ],
+      "Dart": [
+        "Sedan"
+      ],
+      "Durango": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Grand Caravan": [
+        "Minivan",
+        "SUV"
+      ],
+      "Journey": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Magnum": [
+        "Station Wagon"
+      ],
+      "Nitro": [
+        "SUV"
+      ],
+      "Other": [
+        "Coupe"
+      ],
+      "RAM": [
+        "SUV"
+      ]
+    },
+    "FAW": {
+      "HQ": [
+        "SUV"
+      ]
+    },
+    "Ferrari": {
+      "F355": [
+        "Convertible"
+      ],
+      "F360": [
+        "Convertible"
+      ]
+    },
+    "Fiat": {
+      "124 Spider": [
+        "Convertible"
+      ],
+      "125p": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "126": [
+        "Convertible",
+        "Small Cars"
+      ],
+      "500": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Minivan",
+        "Small Cars"
+      ],
+      "500L": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Small Cars"
+      ],
+      "500X": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV"
+      ],
+      "Albea": [
+        "City Cars",
+        "Sedan"
+      ],
+      "Barchetta": [
+        "Convertible"
+      ],
+      "Brava": [
+        "Compact"
+      ],
+      "Bravo": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Small Cars"
+      ],
+      "Cinquecento": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Coupe": [
+        "Coupe"
+      ],
+      "Croma": [
+        "Compact",
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Doblo": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Ducato": [
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Fiorino": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Freemont": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Fullback": [
+        "SUV"
+      ],
+      "Grande Punto": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "Idea": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Linea": [
+        "Compact",
+        "Sedan"
+      ],
+      "Marea": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Multipla": [
+        "Minivan"
+      ],
+      "Other": [
+        "City Cars",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Palio": [
+        "City Cars",
+        "Station Wagon"
+      ],
+      "Panda": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Punto": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Punto 2012": [
+        "City Cars",
+        "Compact"
+      ],
+      "Punto Evo": [
+        "City Cars",
+        "Compact"
+      ],
+      "Qubo": [
+        "City Cars",
+        "Minivan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Scudo": [
+        "Minivan"
+      ],
+      "Sedici": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Seicento": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Siena": [
+        "Sedan"
+      ],
+      "Stilo": [
+        "City Cars",
+        "Compact",
+        "Station Wagon"
+      ],
+      "Strada": [
+        "City Cars",
+        "SUV"
+      ],
+      "Talento": [
+        "Convertible",
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Tempra": [
+        "Sedan"
+      ],
+      "Tipo": [
+        "City Cars",
+        "Compact",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Ulysse": [
+        "Minivan",
+        "SUV"
+      ],
+      "Uno": [
+        "City Cars",
+        "Compact"
+      ]
+    },
+    "Ford": {
+      "B-MAX": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Small Cars"
+      ],
+      "C-MAX": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Capri": [
+        "Convertible"
+      ],
+      "Cougar": [
+        "Coupe"
+      ],
+      "Courier": [
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Crown": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "EDGE": [
+        "SUV",
+        "Station Wagon"
+      ],
+      "EcoSport": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV"
+      ],
+      "Econoline": [
+        "Minivan"
+      ],
+      "Escape": [
+        "City Cars",
+        "Minivan",
+        "SUV"
+      ],
+      "Escort": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Sedan"
+      ],
+      "Excursion": [
+        "SUV"
+      ],
+      "Expedition": [
+        "SUV"
+      ],
+      "Explorer": [
+        "Minivan",
+        "SUV"
+      ],
+      "F150": [
+        "Compact",
+        "SUV"
+      ],
+      "F250": [
+        "SUV"
+      ],
+      "F350": [
+        "SUV"
+      ],
+      "Fiesta": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Minivan",
+        "Sedan",
+        "Small Cars"
+      ],
+      "Flex": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Focus": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Focus C-Max": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Freestar": [
+        "Minivan"
+      ],
+      "Fusion": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Galaxy": [
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Grand C-MAX": [
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "KA": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "Ka+": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Kuga": [
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Maverick": [
+        "SUV"
+      ],
+      "Mondeo": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Minivan",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Mustang": [
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Sedan"
+      ],
+      "Orion": [
+        "Sedan"
+      ],
+      "Other": [
+        "Convertible",
+        "Minivan",
+        "SUV",
+        "Sedan"
+      ],
+      "Probe": [
+        "Coupe"
+      ],
+      "Puma": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Minivan",
+        "SUV"
+      ],
+      "Ranger": [
+        "Minivan",
+        "SUV"
+      ],
+      "S-Max": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Scorpio": [
+        "Sedan"
+      ],
+      "Sierra": [
+        "Sedan"
+      ],
+      "Streetka": [
+        "Convertible"
+      ],
+      "Taurus": [
+        "Sedan"
+      ],
+      "Tourneo Connect": [
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Tourneo Courier": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Tourneo Custom": [
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Transit": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Transit Connect": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Transit Courier": [
+        "City Cars",
+        "Minivan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Transit Custom": [
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Windstar": [
+        "Minivan"
+      ]
+    },
+    "GMC": {
+      "Envoy": [
+        "SUV"
+      ],
+      "Safari": [
+        "Minivan"
+      ],
+      "Savana": [
+        "Minivan"
+      ],
+      "Sierra": [
+        "SUV"
+      ],
+      "Terrain": [
+        "SUV"
+      ],
+      "Yukon": [
+        "SUV"
+      ]
+    },
+    "Grecav": {
+      "Other": [
+        "Small Cars"
+      ]
+    },
+    "Honda": {
+      "Accord": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "CR-V": [
+        "Minivan",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "CRX": [
+        "Convertible",
+        "Coupe",
+        "Small Cars"
+      ],
+      "City": [
+        "City Cars",
+        "Compact",
+        "Sedan"
+      ],
+      "Civic": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "FR-V": [
+        "Compact",
+        "Minivan",
+        "SUV"
+      ],
+      "HR-V": [
+        "Compact",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Insight": [
+        "Compact"
+      ],
+      "Integra": [
+        "Coupe"
+      ],
+      "Jazz": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Small Cars"
+      ],
+      "Legend": [
+        "Sedan"
+      ],
+      "Odyssey": [
+        "Minivan",
+        "SUV"
+      ],
+      "Other": [
+        "SUV",
+        "Small Cars"
+      ],
+      "Pilot": [
+        "SUV"
+      ],
+      "Prelude": [
+        "Coupe"
+      ],
+      "Ridgeline": [
+        "SUV"
+      ],
+      "S 2000": [
+        "Convertible"
+      ],
+      "Stream": [
+        "Minivan",
+        "Station Wagon"
+      ]
+    },
+    "Hummer": {
+      "H2": [
+        "SUV"
+      ],
+      "H3": [
+        "SUV"
+      ]
+    },
+    "Hyundai": {
+      "Accent": [
+        "City Cars",
+        "Compact",
+        "Sedan"
+      ],
+      "Atos": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Azera": [
+        "Sedan"
+      ],
+      "Coupe": [
+        "Compact",
+        "Coupe",
+        "Sedan"
+      ],
+      "Elantra": [
+        "City Cars",
+        "Compact",
+        "Sedan"
+      ],
+      "Galloper": [
+        "SUV"
+      ],
+      "Genesis": [
+        "Coupe",
+        "Sedan"
+      ],
+      "Genesis Coupe": [
+        "Coupe"
+      ],
+      "Getz": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "Grand Santa Fe": [
+        "SUV"
+      ],
+      "Grandeur": [
+        "Sedan"
+      ],
+      "H-1": [
+        "Minivan"
+      ],
+      "H-1 Starex": [
+        "Minivan"
+      ],
+      "I30": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "IONIQ": [
+        "Compact"
+      ],
+      "Kona": [
+        "City Cars",
+        "Compact",
+        "SUV",
+        "Small Cars"
+      ],
+      "Matrix": [
+        "City Cars",
+        "Compact",
+        "Minivan"
+      ],
+      "Other": [
+        "SUV"
+      ],
+      "Pony": [
+        "Compact"
+      ],
+      "Santa Fe": [
+        "SUV",
+        "Station Wagon"
+      ],
+      "Sonata": [
+        "Sedan"
+      ],
+      "Sonica": [
+        "Sedan"
+      ],
+      "Terracan": [
+        "SUV"
+      ],
+      "Trajet": [
+        "Minivan"
+      ],
+      "Tucson": [
+        "Compact",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Veloster": [
+        "Compact",
+        "Coupe"
+      ],
+      "XG 30": [
+        "Sedan"
+      ],
+      "i10": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "i20": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Minivan",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "i25": [
+        "Compact"
+      ],
+      "i30 N": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Station Wagon"
+      ],
+      "i40": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "ix20": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "ix35": [
+        "Minivan",
+        "SUV",
+        "Sedan"
+      ],
+      "ix55": [
+        "SUV"
+      ]
+    },
+    "Infiniti": {
+      "EX": [
+        "SUV",
+        "Station Wagon"
+      ],
+      "FX": [
+        "SUV"
+      ],
+      "G": [
+        "Coupe",
+        "Sedan"
+      ],
+      "M": [
+        "Sedan"
+      ],
+      "Other": [
+        "SUV",
+        "Sedan"
+      ],
+      "Q30": [
+        "City Cars",
+        "Compact",
+        "SUV"
+      ],
+      "Q50": [
+        "Sedan"
+      ],
+      "Q60": [
+        "Coupe"
+      ],
+      "Q70": [
+        "Sedan"
+      ],
+      "QX30": [
+        "SUV"
+      ],
+      "QX50": [
+        "SUV",
+        "Sedan"
+      ],
+      "QX60": [
+        "SUV"
+      ],
+      "QX70": [
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "QX80": [
+        "SUV"
+      ]
+    },
+    "Inny": {
+      "Other": [
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ]
+    },
+    "Isuzu": {
+      "D-Max": [
+        "SUV"
+      ],
+      "Other": [
+        "SUV"
+      ]
+    },
+    "Iveco": {
+      "Massif": [
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Small Cars"
+      ]
+    },
+    "Jaguar": {
+      "Daimler": [
+        "Sedan"
+      ],
+      "E-Pace": [
+        "SUV"
+      ],
+      "F-Pace": [
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "F-Type": [
+        "Convertible",
+        "Coupe"
+      ],
+      "S-Type": [
+        "Sedan"
+      ],
+      "S-Type R": [
+        "Sedan"
+      ],
+      "X-Type": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "XE": [
+        "City Cars",
+        "Sedan"
+      ],
+      "XF": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "XJ": [
+        "City Cars",
+        "Compact",
+        "Sedan"
+      ],
+      "XJS": [
+        "Convertible",
+        "Coupe"
+      ],
+      "XK": [
+        "Convertible",
+        "Coupe"
+      ],
+      "XK8": [
+        "Convertible",
+        "Coupe"
+      ]
+    },
+    "Jeep": {
+      "Cherokee": [
+        "SUV",
+        "Station Wagon"
+      ],
+      "Commander": [
+        "SUV"
+      ],
+      "Compass": [
+        "SUV"
+      ],
+      "Gladiator": [
+        "Convertible",
+        "SUV"
+      ],
+      "Grand Cherokee": [
+        "SUV",
+        "Station Wagon"
+      ],
+      "Liberty": [
+        "SUV"
+      ],
+      "Patriot": [
+        "SUV"
+      ],
+      "Renegade": [
+        "City Cars",
+        "Minivan",
+        "SUV"
+      ],
+      "Wrangler": [
+        "Convertible",
+        "SUV"
+      ]
+    },
+    "Kia": {
+      "Carens": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Carnival": [
+        "City Cars",
+        "Minivan",
+        "SUV"
+      ],
+      "Ceed": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Cerato": [
+        "City Cars",
+        "Compact",
+        "Sedan"
+      ],
+      "Clarus": [
+        "Sedan"
+      ],
+      "Joice": [
+        "Minivan"
+      ],
+      "Magentis": [
+        "Sedan"
+      ],
+      "Niro": [
+        "SUV"
+      ],
+      "Opirus": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Optima": [
+        "Compact",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Other": [
+        "Compact",
+        "SUV",
+        "Sedan"
+      ],
+      "Picanto": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "Pro_cee'd": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Rio": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Sedona": [
+        "Minivan"
+      ],
+      "Shuma": [
+        "Compact"
+      ],
+      "Sorento": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Soul": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Sportage": [
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Stinger": [
+        "Compact",
+        "Coupe",
+        "Sedan"
+      ],
+      "Stonic": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan"
+      ],
+      "Venga": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "XCeed": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "SUV"
+      ]
+    },
+    "Lada": {
+      "1117": [
+        "City Cars"
+      ],
+      "1118": [
+        "Sedan"
+      ],
+      "2108": [
+        "Compact"
+      ],
+      "Kalina": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Niva": [
+        "SUV",
+        "Small Cars"
+      ],
+      "Other": [
+        "SUV"
+      ],
+      "Samara": [
+        "Compact"
+      ]
+    },
+    "Lancia": {
+      "Delta": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Kappa": [
+        "Sedan"
+      ],
+      "Lybra": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Musa": [
+        "City Cars",
+        "Compact",
+        "Minivan"
+      ],
+      "Phedra": [
+        "Minivan"
+      ],
+      "Thema": [
+        "Sedan"
+      ],
+      "Thesis": [
+        "Sedan"
+      ],
+      "Voyager": [
+        "Minivan",
+        "SUV"
+      ],
+      "Ypsilon": [
+        "City Cars",
+        "Small Cars"
+      ]
+    },
+    "Land Rover": {
+      "Defender": [
+        "SUV",
+        "Small Cars"
+      ],
+      "Discovery": [
+        "City Cars",
+        "SUV"
+      ],
+      "Discovery Sport": [
+        "SUV"
+      ],
+      "Freelander": [
+        "City Cars",
+        "Convertible",
+        "SUV"
+      ],
+      "Other": [
+        "SUV"
+      ],
+      "Range Rover": [
+        "SUV"
+      ],
+      "Range Rover Evoque": [
+        "Convertible",
+        "SUV"
+      ],
+      "Range Rover Sport": [
+        "City Cars",
+        "SUV"
+      ],
+      "Range Rover Velar": [
+        "SUV"
+      ]
+    },
+    "Lexus": {
+      "CT": [
+        "Compact"
+      ],
+      "ES": [
+        "Sedan"
+      ],
+      "GS": [
+        "Sedan"
+      ],
+      "GX": [
+        "SUV"
+      ],
+      "IS": [
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "LS": [
+        "Sedan"
+      ],
+      "LX": [
+        "SUV"
+      ],
+      "NX": [
+        "SUV"
+      ],
+      "Other": [
+        "Station Wagon"
+      ],
+      "RC": [
+        "Coupe"
+      ],
+      "RX": [
+        "SUV",
+        "Station Wagon"
+      ],
+      "SC": [
+        "Convertible",
+        "Coupe"
+      ],
+      "UX": [
+        "City Cars",
+        "SUV",
+        "Station Wagon"
+      ]
+    },
+    "Ligier": {
+      "Ambra": [
+        "Small Cars"
+      ],
+      "IXO": [
+        "Small Cars"
+      ],
+      "JS RC": [
+        "Small Cars"
+      ],
+      "JS50": [
+        "Compact",
+        "Small Cars"
+      ],
+      "JS50L": [
+        "Small Cars"
+      ],
+      "Nova": [
+        "Small Cars"
+      ],
+      "Other": [
+        "Small Cars"
+      ],
+      "X-Too": [
+        "Small Cars"
+      ],
+      "X-Too Max": [
+        "Small Cars"
+      ]
+    },
+    "Lincoln": {
+      "Aviator": [
+        "SUV"
+      ],
+      "Continental": [
+        "Sedan"
+      ],
+      "MKX": [
+        "SUV"
+      ],
+      "MKZ": [
+        "SUV",
+        "Sedan"
+      ],
+      "Mark": [
+        "Coupe"
+      ],
+      "Mark LT": [
+        "SUV"
+      ],
+      "Navigator": [
+        "SUV"
+      ],
+      "Other": [
+        "Minivan",
+        "SUV",
+        "Sedan"
+      ],
+      "Town Car": [
+        "Sedan",
+        "Station Wagon"
+      ]
+    },
+    "Lotus": {
+      "Other": [
+        "Convertible"
+      ],
+      "Super Seven": [
+        "Convertible"
+      ]
+    },
+    "MG": {
+      "MGF": [
+        "Convertible"
+      ],
+      "TD": [
+        "Compact"
+      ],
+      "ZR": [
+        "Compact",
+        "Small Cars"
+      ],
+      "ZS": [
+        "Sedan"
+      ],
+      "ZT": [
+        "Sedan"
+      ]
+    },
+    "MINI": {
+      "1300": [
+        "Compact",
+        "Small Cars"
+      ],
+      "Clubman": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Cooper": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Cooper S": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Countryman": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "ONE": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Small Cars"
+      ],
+      "Other": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Small Cars"
+      ],
+      "Paceman": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "SUV"
+      ]
+    },
+    "Maserati": {
+      "224": [
+        "Coupe"
+      ],
+      "3200": [
+        "Coupe"
+      ],
+      "4200": [
+        "Coupe"
+      ],
+      "Ghibli": [
+        "Coupe",
+        "Sedan"
+      ],
+      "GranTurismo": [
+        "Coupe"
+      ],
+      "Quattroporte": [
+        "Sedan"
+      ]
+    },
+    "Mazda": {
+      "121": [
+        "City Cars"
+      ],
+      "2": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "3": [
+        "City Cars",
+        "Compact",
+        "SUV",
+        "Sedan",
+        "Small Cars"
+      ],
+      "323": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "323F": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "5": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "6": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Minivan",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "626": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "BT-50": [
+        "SUV"
+      ],
+      "CX-3": [
+        "City Cars",
+        "Compact",
+        "SUV"
+      ],
+      "CX-30": [
+        "Compact",
+        "SUV",
+        "Station Wagon"
+      ],
+      "CX-5": [
+        "SUV"
+      ],
+      "CX-7": [
+        "Minivan",
+        "SUV"
+      ],
+      "CX-9": [
+        "SUV"
+      ],
+      "Demio": [
+        "City Cars",
+        "Minivan"
+      ],
+      "MPV": [
+        "Minivan"
+      ],
+      "MX-3": [
+        "Coupe"
+      ],
+      "MX-5": [
+        "Convertible"
+      ],
+      "Millenia": [
+        "Sedan"
+      ],
+      "Premacy": [
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Protege": [
+        "Compact"
+      ],
+      "RX-7": [
+        "Convertible"
+      ],
+      "RX-8": [
+        "Coupe",
+        "Sedan"
+      ],
+      "Tribute": [
+        "SUV"
+      ],
+      "Xedos": [
+        "Sedan"
+      ]
+    },
+    "Mercedes-Benz": {
+      "280": [
+        "Convertible",
+        "SUV",
+        "Station Wagon"
+      ],
+      "AMG GT": [
+        "Sedan"
+      ],
+      "CL": [
+        "Compact",
+        "Coupe",
+        "Sedan"
+      ],
+      "CLA": [
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "CLC": [
+        "City Cars",
+        "Compact",
+        "Coupe"
+      ],
+      "CLK": [
+        "Convertible",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "CLS": [
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Citan": [
+        "Minivan",
+        "Station Wagon"
+      ],
+      "GL": [
+        "SUV"
+      ],
+      "GLA": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV"
+      ],
+      "GLB": [
+        "SUV"
+      ],
+      "GLC": [
+        "Compact",
+        "SUV"
+      ],
+      "GLE": [
+        "Coupe",
+        "SUV"
+      ],
+      "GLK": [
+        "SUV"
+      ],
+      "GLS": [
+        "SUV"
+      ],
+      "Klasa A": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Small Cars"
+      ],
+      "Klasa B": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Klasa C": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Klasa E": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Minivan",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Klasa G": [
+        "SUV"
+      ],
+      "Klasa R": [
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Klasa S": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Minivan",
+        "Sedan"
+      ],
+      "Klasa V": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Klasa X": [
+        "City Cars",
+        "SUV"
+      ],
+      "ML": [
+        "Compact",
+        "SUV"
+      ],
+      "Other": [
+        "Coupe",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "SL": [
+        "Convertible",
+        "Coupe"
+      ],
+      "SLC": [
+        "Convertible"
+      ],
+      "SLK": [
+        "Convertible",
+        "Coupe",
+        "Small Cars"
+      ],
+      "Sprinter": [
+        "City Cars",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Vaneo": [
+        "City Cars",
+        "Minivan"
+      ],
+      "Viano": [
+        "Minivan"
+      ],
+      "Vito": [
+        "Convertible",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "W124 (1984-1993)": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "W201 (190)": [
+        "City Cars",
+        "Compact",
+        "Sedan"
+      ]
+    },
+    "Microcar": {
+      "DUE": [
+        "Small Cars"
+      ],
+      "DUE First": [
+        "Small Cars"
+      ],
+      "Flex": [
+        "Small Cars"
+      ],
+      "Highland X": [
+        "Small Cars"
+      ],
+      "Ligier": [
+        "Compact",
+        "Small Cars"
+      ],
+      "M.GO": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "MC": [
+        "Compact",
+        "Small Cars"
+      ],
+      "Other": [
+        "Compact",
+        "Small Cars"
+      ],
+      "Virgo": [
+        "City Cars",
+        "Small Cars"
+      ]
+    },
+    "Mitsubishi": {
+      "3000GT": [
+        "Coupe"
+      ],
+      "ASX": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Carisma": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Colt": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Small Cars"
+      ],
+      "Eclipse": [
+        "Compact",
+        "Coupe"
+      ],
+      "Eclipse Cross": [
+        "Compact",
+        "SUV"
+      ],
+      "Endeavor": [
+        "SUV"
+      ],
+      "Galant": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Grandis": [
+        "Minivan"
+      ],
+      "L200": [
+        "SUV",
+        "Sedan"
+      ],
+      "L400": [
+        "SUV"
+      ],
+      "Lancer": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Lancer Evolution": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Montero": [
+        "SUV"
+      ],
+      "Outlander": [
+        "City Cars",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Pajero": [
+        "SUV",
+        "Station Wagon"
+      ],
+      "Pajero Pinin": [
+        "SUV"
+      ],
+      "Sigma": [
+        "Sedan"
+      ],
+      "Space Gear": [
+        "Minivan"
+      ],
+      "Space Runner": [
+        "Minivan"
+      ],
+      "Space Star": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Small Cars"
+      ],
+      "Space Wagon": [
+        "Minivan"
+      ]
+    },
+    "Nissan": {
+      "100 NX": [
+        "Convertible"
+      ],
+      "200 SX": [
+        "Coupe"
+      ],
+      "300 ZX": [
+        "Convertible",
+        "Coupe"
+      ],
+      "350 Z": [
+        "Convertible",
+        "Coupe",
+        "Small Cars"
+      ],
+      "370 Z": [
+        "Coupe"
+      ],
+      "Almera": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Sedan"
+      ],
+      "Almera Tino": [
+        "Compact",
+        "Minivan"
+      ],
+      "Altima": [
+        "Coupe",
+        "Sedan"
+      ],
+      "Bluebird": [
+        "Sedan"
+      ],
+      "Cube": [
+        "City Cars",
+        "Compact",
+        "Minivan"
+      ],
+      "Frontier": [
+        "SUV"
+      ],
+      "Interstar": [
+        "Minivan"
+      ],
+      "Juke": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan"
+      ],
+      "King Cab": [
+        "SUV"
+      ],
+      "Kubistar": [
+        "Minivan"
+      ],
+      "Maxima": [
+        "Coupe",
+        "Sedan"
+      ],
+      "Micra": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Small Cars"
+      ],
+      "Murano": [
+        "Convertible",
+        "SUV"
+      ],
+      "NP300 Pickup": [
+        "SUV"
+      ],
+      "NV200": [
+        "Minivan"
+      ],
+      "NV300": [
+        "Minivan"
+      ],
+      "Navara": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Note": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Small Cars"
+      ],
+      "Other": [
+        "Sedan"
+      ],
+      "Pathfinder": [
+        "SUV"
+      ],
+      "Patrol": [
+        "Convertible",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Pickup": [
+        "SUV"
+      ],
+      "Pixo": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Primastar": [
+        "Minivan"
+      ],
+      "Primera": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Pulsar": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Small Cars"
+      ],
+      "Qashqai": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Qashqai+2": [
+        "Minivan",
+        "SUV"
+      ],
+      "Quest": [
+        "Minivan",
+        "SUV"
+      ],
+      "Rogue": [
+        "SUV"
+      ],
+      "Sentra": [
+        "Compact",
+        "Sedan"
+      ],
+      "Skyline": [
+        "Coupe",
+        "Sedan"
+      ],
+      "Sunny": [
+        "Compact"
+      ],
+      "Terrano": [
+        "SUV"
+      ],
+      "Tiida": [
+        "City Cars",
+        "Compact",
+        "Sedan"
+      ],
+      "Titan": [
+        "SUV"
+      ],
+      "X-Trail": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ]
+    },
+    "Nysa": {
+      "Seria 500": [
+        "Minivan"
+      ]
+    },
+    "Oldsmobile": {
+      "Aurora": [
+        "Sedan"
+      ],
+      "Bravada": [
+        "SUV"
+      ],
+      "Cutlass": [
+        "Sedan"
+      ],
+      "Delta 88": [
+        "Sedan"
+      ]
+    },
+    "Opel": {
+      "Adam": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "Agila": [
+        "City Cars",
+        "Compact",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Antara": [
+        "SUV"
+      ],
+      "Astra": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Calibra": [
+        "Coupe"
+      ],
+      "Campo": [
+        "Station Wagon"
+      ],
+      "Cascada": [
+        "Convertible"
+      ],
+      "Combo": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Corsa": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Minivan",
+        "Sedan",
+        "Small Cars"
+      ],
+      "Crossland X": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV"
+      ],
+      "Frontera": [
+        "City Cars",
+        "SUV"
+      ],
+      "GT": [
+        "Convertible"
+      ],
+      "Grandland X": [
+        "Minivan",
+        "SUV"
+      ],
+      "Insignia": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Minivan",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Kadett": [
+        "Compact",
+        "Convertible",
+        "Sedan"
+      ],
+      "Karl": [
+        "City Cars",
+        "Compact",
+        "SUV",
+        "Small Cars"
+      ],
+      "Meriva": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Mokka": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Monterey": [
+        "SUV"
+      ],
+      "Movano": [
+        "City Cars",
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Omega": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Signum": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Sintra": [
+        "Minivan"
+      ],
+      "Speedster": [
+        "Coupe"
+      ],
+      "Tigra": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Small Cars"
+      ],
+      "Vectra": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Vivaro": [
+        "City Cars",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Zafira": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ]
+    },
+    "Peugeot": {
+      "1007": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Small Cars"
+      ],
+      "106": [
+        "City Cars"
+      ],
+      "107": [
+        "City Cars",
+        "Coupe",
+        "Small Cars"
+      ],
+      "108": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "2008": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Minivan",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "205": [
+        "City Cars",
+        "Convertible",
+        "Coupe",
+        "Small Cars"
+      ],
+      "206": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Minivan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "206 CC": [
+        "City Cars",
+        "Compact",
+        "Convertible"
+      ],
+      "206 plus": [
+        "City Cars",
+        "Compact",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "207": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "207 CC": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Small Cars"
+      ],
+      "208": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "3008": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "301": [
+        "City Cars",
+        "Compact",
+        "Sedan"
+      ],
+      "306": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "307": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Minivan",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "307 CC": [
+        "Convertible",
+        "Sedan"
+      ],
+      "308": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Minivan",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "308 CC": [
+        "Convertible",
+        "Coupe"
+      ],
+      "309": [
+        "City Cars"
+      ],
+      "4007": [
+        "SUV"
+      ],
+      "4008": [
+        "SUV"
+      ],
+      "405": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "406": [
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "407": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "5008": [
+        "City Cars",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "508": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Minivan",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "605": [
+        "Sedan"
+      ],
+      "607": [
+        "Sedan"
+      ],
+      "807": [
+        "Minivan"
+      ],
+      "Bipper": [
+        "City Cars",
+        "Minivan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Boxer": [
+        "City Cars",
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Expert": [
+        "Minivan",
+        "SUV"
+      ],
+      "Other": [
+        "City Cars"
+      ],
+      "Partner": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "RCZ": [
+        "City Cars",
+        "Coupe"
+      ],
+      "Rifter": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Traveller": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ]
+    },
+    "Plymouth": {
+      "Prowler": [
+        "Convertible"
+      ]
+    },
+    "Polonez": {
+      "1.5": [
+        "City Cars",
+        "Sedan"
+      ],
+      "1.6": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Atu": [
+        "Compact",
+        "Sedan",
+        "Small Cars"
+      ],
+      "Caro": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Station Wagon"
+      ]
+    },
+    "Pontiac": {
+      "Firebird": [
+        "Coupe"
+      ],
+      "Grand-Am": [
+        "Sedan"
+      ],
+      "Grand-Prix": [
+        "Coupe",
+        "Sedan"
+      ],
+      "Trans Am": [
+        "Convertible",
+        "Coupe"
+      ]
+    },
+    "Porsche": {
+      "356": [
+        "Convertible"
+      ],
+      "718 Cayman": [
+        "Coupe"
+      ],
+      "911": [
+        "Convertible",
+        "Coupe",
+        "Small Cars"
+      ],
+      "944": [
+        "Coupe"
+      ],
+      "968": [
+        "Convertible"
+      ],
+      "Boxster": [
+        "Convertible"
+      ],
+      "Cayenne": [
+        "SUV",
+        "Station Wagon"
+      ],
+      "Cayman": [
+        "Coupe"
+      ],
+      "Macan": [
+        "SUV",
+        "Station Wagon"
+      ],
+      "Panamera": [
+        "Compact",
+        "Coupe",
+        "Sedan"
+      ]
+    },
+    "RAM": {
+      "1500": [
+        "SUV"
+      ],
+      "Other": [
+        "SUV"
+      ]
+    },
+    "Renault": {
+      "19": [
+        "City Cars",
+        "Compact",
+        "Convertible"
+      ],
+      "4": [
+        "Minivan"
+      ],
+      "Alaskan": [
+        "SUV"
+      ],
+      "Avantime": [
+        "Compact",
+        "Minivan"
+      ],
+      "Captur": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Clio": [
+        "City Cars",
+        "Compact",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Coupe": [
+        "Coupe"
+      ],
+      "Espace": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV"
+      ],
+      "Express": [
+        "Minivan"
+      ],
+      "Fluence": [
+        "City Cars",
+        "Compact",
+        "Sedan"
+      ],
+      "Grand Espace": [
+        "Minivan"
+      ],
+      "Grand Scenic": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Kadjar": [
+        "Compact",
+        "Minivan",
+        "SUV"
+      ],
+      "Kangoo": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Koleos": [
+        "City Cars",
+        "Minivan",
+        "SUV"
+      ],
+      "Laguna": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Latitude": [
+        "Sedan"
+      ],
+      "Master": [
+        "City Cars",
+        "Minivan",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Megane": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Minivan",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Modus": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Small Cars"
+      ],
+      "Safrane": [
+        "City Cars",
+        "Sedan"
+      ],
+      "Scenic": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Scenic Conquest": [
+        "Minivan"
+      ],
+      "Scenic RX4": [
+        "Minivan",
+        "SUV"
+      ],
+      "Talisman": [
+        "Compact",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Thalia": [
+        "City Cars",
+        "Compact",
+        "Sedan"
+      ],
+      "Trafic": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Twingo": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Minivan",
+        "Small Cars"
+      ],
+      "Vel Satis": [
+        "Compact",
+        "Minivan",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Wind": [
+        "Convertible"
+      ]
+    },
+    "Rolls-Royce": {
+      "Silver Spirit": [
+        "Sedan"
+      ]
+    },
+    "Rover": {
+      "200": [
+        "Small Cars"
+      ],
+      "214": [
+        "City Cars"
+      ],
+      "220": [
+        "City Cars"
+      ],
+      "25": [
+        "City Cars",
+        "Compact"
+      ],
+      "400": [
+        "Sedan"
+      ],
+      "416": [
+        "Sedan"
+      ],
+      "45": [
+        "Compact",
+        "Sedan"
+      ],
+      "620": [
+        "Sedan"
+      ],
+      "75": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "MG": [
+        "Convertible"
+      ],
+      "Streetwise": [
+        "City Cars",
+        "Compact"
+      ]
+    },
+    "Saab": {
+      "9-2X": [
+        "Station Wagon"
+      ],
+      "9-3": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "9-3X": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "9-5": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "9-7X": [
+        "SUV"
+      ],
+      "900": [
+        "Compact",
+        "Convertible",
+        "Coupe"
+      ],
+      "9000": [
+        "Sedan"
+      ]
+    },
+    "Santana": {
+      "PS-10": [
+        "SUV"
+      ]
+    },
+    "Saturn": {
+      "Outlook": [
+        "SUV"
+      ]
+    },
+    "Scion": {
+      "xA": [
+        "City Cars"
+      ]
+    },
+    "Seat": {
+      "Alhambra": [
+        "Minivan"
+      ],
+      "Altea": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Altea XL": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Arona": [
+        "City Cars",
+        "Compact",
+        "SUV"
+      ],
+      "Arosa": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Ateca": [
+        "Compact",
+        "SUV"
+      ],
+      "Cordoba": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Exeo": [
+        "Compact",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Ibiza": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Leon": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Marbella": [
+        "Small Cars"
+      ],
+      "Mii": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Tarraco": [
+        "SUV"
+      ],
+      "Toledo": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Minivan",
+        "Sedan",
+        "Station Wagon"
+      ]
+    },
+    "Smart": {
+      "Forfour": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "Fortwo": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Small Cars"
+      ],
+      "Roadster": [
+        "Convertible",
+        "Coupe",
+        "Small Cars"
+      ]
+    },
+    "SsangYong": {
+      "Actyon": [
+        "SUV"
+      ],
+      "Korando": [
+        "SUV",
+        "Station Wagon"
+      ],
+      "Kyron": [
+        "SUV"
+      ],
+      "MUSSO": [
+        "SUV"
+      ],
+      "Other": [
+        "SUV"
+      ],
+      "REXTON": [
+        "SUV"
+      ],
+      "Rodius": [
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Tivoli": [
+        "Compact",
+        "Minivan",
+        "SUV"
+      ],
+      "XLV": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ]
+    },
+    "Subaru": {
+      "B9 Tribeca": [
+        "SUV"
+      ],
+      "BRZ": [
+        "Coupe"
+      ],
+      "Baja": [
+        "SUV"
+      ],
+      "Forester": [
+        "City Cars",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "G3X Justy": [
+        "City Cars",
+        "Compact",
+        "SUV"
+      ],
+      "Impreza": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Justy": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "Legacy": [
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Levorg": [
+        "Station Wagon"
+      ],
+      "OUTBACK": [
+        "Compact",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Other": [
+        "SUV"
+      ],
+      "SVX": [
+        "Coupe"
+      ],
+      "Trezia": [
+        "City Cars",
+        "Compact"
+      ],
+      "Tribeca": [
+        "SUV"
+      ],
+      "WRX": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "XV": [
+        "Compact",
+        "Minivan",
+        "SUV"
+      ]
+    },
+    "Suzuki": {
+      "Alto": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Baleno": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "Celerio": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Grand Vitara": [
+        "City Cars",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Ignis": [
+        "City Cars",
+        "Compact",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Jimny": [
+        "City Cars",
+        "Compact",
+        "SUV",
+        "Small Cars"
+      ],
+      "Kizashi": [
+        "Sedan"
+      ],
+      "Liana": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "SX4": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Small Cars"
+      ],
+      "SX4 S-Cross": [
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Samurai": [
+        "City Cars",
+        "Coupe",
+        "SUV",
+        "Small Cars"
+      ],
+      "Splash": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "Swace": [
+        "Station Wagon"
+      ],
+      "Swift": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "SUV",
+        "Sedan",
+        "Small Cars"
+      ],
+      "Vitara": [
+        "Compact",
+        "Convertible",
+        "SUV",
+        "Small Cars"
+      ],
+      "Wagon R+": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "X-90": [
+        "Convertible",
+        "SUV"
+      ],
+      "XL7": [
+        "SUV"
+      ]
+    },
+    "Tarpan": {
+      "Honker": [
+        "SUV"
+      ],
+      "Other": [
+        "Minivan"
+      ]
+    },
+    "Tata": {
+      "Indica": [
+        "City Cars"
+      ],
+      "Other": [
+        "Minivan",
+        "SUV"
+      ],
+      "Xenon": [
+        "SUV"
+      ]
+    },
+    "Tavria": {
+      "ZAZ 1102": [
+        "City Cars",
+        "Compact"
+      ]
+    },
+    "Toyota": {
+      "4-Runner": [
+        "SUV"
+      ],
+      "Auris": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Avalon": [
+        "Sedan"
+      ],
+      "Avensis": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Avensis Verso": [
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Aygo": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "C-HR": [
+        "Compact",
+        "SUV"
+      ],
+      "Camry": [
+        "Sedan"
+      ],
+      "Camry Solara": [
+        "Convertible",
+        "Coupe"
+      ],
+      "Carina": [
+        "Sedan"
+      ],
+      "Celica": [
+        "Convertible",
+        "Coupe"
+      ],
+      "Corolla": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Corolla Verso": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "FJ": [
+        "SUV"
+      ],
+      "GT86": [
+        "Coupe"
+      ],
+      "Hiace": [
+        "Minivan"
+      ],
+      "Highlander": [
+        "SUV"
+      ],
+      "Hilux": [
+        "SUV"
+      ],
+      "Land Cruiser": [
+        "Minivan",
+        "SUV"
+      ],
+      "MR2": [
+        "Convertible"
+      ],
+      "Matrix": [
+        "Station Wagon"
+      ],
+      "Paseo": [
+        "Coupe"
+      ],
+      "Previa": [
+        "Minivan"
+      ],
+      "Prius": [
+        "City Cars",
+        "Compact",
+        "Sedan"
+      ],
+      "Prius+": [
+        "Minivan"
+      ],
+      "ProAce": [
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Proace City": [
+        "Minivan"
+      ],
+      "Proace City Verso": [
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Proace Verso": [
+        "Minivan",
+        "Station Wagon"
+      ],
+      "RAV4": [
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Sequoia": [
+        "SUV"
+      ],
+      "Sienna": [
+        "Minivan"
+      ],
+      "Starlet": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "Supra": [
+        "Coupe"
+      ],
+      "Tacoma": [
+        "SUV"
+      ],
+      "Tercel": [
+        "Compact"
+      ],
+      "Tundra": [
+        "SUV"
+      ],
+      "Urban Cruiser": [
+        "City Cars",
+        "Compact",
+        "SUV"
+      ],
+      "Venza": [
+        "Minivan",
+        "SUV"
+      ],
+      "Verso": [
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Verso S": [
+        "City Cars",
+        "Compact",
+        "Minivan"
+      ],
+      "Yaris": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Sedan",
+        "Small Cars"
+      ],
+      "Yaris Verso": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Small Cars"
+      ],
+      "iQ": [
+        "City Cars",
+        "Small Cars"
+      ]
+    },
+    "Trabant": {
+      "601": [
+        "Compact",
+        "Small Cars"
+      ],
+      "Other": [
+        "City Cars",
+        "Coupe"
+      ]
+    },
+    "Uaz": {
+      "452": [
+        "Minivan"
+      ],
+      "Other": [
+        "SUV"
+      ]
+    },
+    "Vanderhall": {
+      "Speedster": [
+        "Small Cars"
+      ]
+    },
+    "Volkswagen": {
+      "Amarok": [
+        "SUV"
+      ],
+      "Arteon": [
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Atlas": [
+        "SUV"
+      ],
+      "Beetle": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Sedan",
+        "Small Cars"
+      ],
+      "Bora": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "CC": [
+        "Coupe",
+        "Sedan"
+      ],
+      "Caddy": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "California": [
+        "Minivan"
+      ],
+      "Caravelle": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Crafter": [
+        "City Cars",
+        "Minivan",
+        "Station Wagon"
+      ],
+      "Eos": [
+        "Convertible"
+      ],
+      "Fox": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ],
+      "Garbus": [
+        "Compact"
+      ],
+      "Golf": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Golf Plus": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Minivan",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Golf Sportsvan": [
+        "Compact",
+        "Minivan",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Jetta": [
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "LT": [
+        "City Cars",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Lupo": [
+        "City Cars",
+        "Sedan",
+        "Small Cars"
+      ],
+      "Multivan": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "New Beetle": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Sedan",
+        "Small Cars"
+      ],
+      "Other": [
+        "Compact",
+        "Minivan",
+        "SUV"
+      ],
+      "Passat": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Passat CC": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Sedan"
+      ],
+      "Phaeton": [
+        "Sedan"
+      ],
+      "Polo": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Routan": [
+        "Minivan",
+        "SUV"
+      ],
+      "Scirocco": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Sedan"
+      ],
+      "Sharan": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "T-Cross": [
+        "City Cars",
+        "Compact",
+        "SUV",
+        "Station Wagon"
+      ],
+      "T-Roc": [
+        "City Cars",
+        "Compact",
+        "SUV"
+      ],
+      "Tiguan": [
+        "City Cars",
+        "Compact",
+        "Convertible",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Tiguan Allspace": [
+        "SUV",
+        "Station Wagon"
+      ],
+      "Touareg": [
+        "City Cars",
+        "Coupe",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "Touran": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Transporter": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Vento": [
+        "Sedan"
+      ],
+      "up!": [
+        "City Cars",
+        "Compact",
+        "Small Cars"
+      ]
+    },
+    "Volvo": {
+      "744": [
+        "Station Wagon"
+      ],
+      "850": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "945": [
+        "Station Wagon"
+      ],
+      "965": [
+        "Compact",
+        "Sedan"
+      ],
+      "C30": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "C70": [
+        "Convertible",
+        "Coupe"
+      ],
+      "S40": [
+        "City Cars",
+        "Compact",
+        "Sedan"
+      ],
+      "S60": [
+        "City Cars",
+        "Compact",
+        "SUV",
+        "Sedan"
+      ],
+      "S70": [
+        "Sedan"
+      ],
+      "S80": [
+        "City Cars",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "S90": [
+        "Sedan"
+      ],
+      "Seria 400": [
+        "Compact",
+        "Sedan"
+      ],
+      "Seria 700": [
+        "Sedan"
+      ],
+      "Seria 900": [
+        "Sedan",
+        "Station Wagon"
+      ],
+      "V40": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "SUV",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "V50": [
+        "Compact",
+        "Minivan",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "V60": [
+        "Compact",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "V70": [
+        "City Cars",
+        "Station Wagon"
+      ],
+      "V90": [
+        "SUV",
+        "Station Wagon"
+      ],
+      "XC 40": [
+        "City Cars",
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "XC 60": [
+        "SUV"
+      ],
+      "XC 70": [
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ],
+      "XC 90": [
+        "SUV",
+        "Small Cars",
+        "Station Wagon"
+      ]
+    },
+    "Wartburg": {
+      "1.3": [
+        "Sedan"
+      ],
+      "353.0": [
+        "Sedan"
+      ]
+    },
+    "Zaporożec": {
+      "968": [
+        "City Cars"
+      ]
+    },
+    "Zastava": {
+      "Other": [
+        "Small Cars"
+      ]
+    },
+    "Škoda": {
+      "105": [
+        "City Cars"
+      ],
+      "Citigo": [
+        "City Cars",
+        "Small Cars"
+      ],
+      "Fabia": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Minivan",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Favorit": [
+        "City Cars",
+        "Compact"
+      ],
+      "Felicia": [
+        "City Cars",
+        "Compact",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Forman": [
+        "Station Wagon"
+      ],
+      "Kamiq": [
+        "City Cars",
+        "Compact",
+        "SUV"
+      ],
+      "Karoq": [
+        "SUV",
+        "Station Wagon"
+      ],
+      "Kodiaq": [
+        "SUV",
+        "Station Wagon"
+      ],
+      "Octavia": [
+        "City Cars",
+        "Compact",
+        "Coupe",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Praktik": [
+        "City Cars",
+        "Minivan",
+        "SUV"
+      ],
+      "RAPID": [
+        "City Cars",
+        "Compact",
+        "Sedan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Roomster": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Scala": [
+        "City Cars",
+        "Compact",
+        "Small Cars",
+        "Station Wagon"
+      ],
+      "Superb": [
+        "City Cars",
+        "Compact",
+        "SUV",
+        "Sedan",
+        "Station Wagon"
+      ],
+      "Yeti": [
+        "City Cars",
+        "Compact",
+        "Minivan",
+        "SUV",
+        "Station Wagon"
+      ]
+    },
+    "Żuk": {
+      "Other": [
+        "Small Cars"
+      ]
+    }
+  },
+  "transmissions": [
+    "Automatic",
+    "Manual"
+  ],
+  "fuel_types": [
+    "Benzyna",
+    "Benzyna + LPG",
+    "Diesel"
+  ],
+  "drives": [
+    "4x4 Auto",
+    "4x4 Manual",
+    "4x4 Permanent",
+    "Front-Wheel Drive",
+    "Rear-Wheel Drive"
+  ],
+  "colours": [
+    "Bezowy",
+    "Bialy",
+    "Bordowy",
+    "Brazowy",
+    "Czarny",
+    "Czerwony",
+    "Fioletowy",
+    "Inny",
+    "Niebieski",
+    "Srebrny",
+    "Szary",
+    "Zielony",
+    "Zloty",
+    "Zolty"
+  ],
+  "doors_numbers": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "conditions": [
+    "Nowy",
+    "Uzywany"
+  ],
+  "labels_to_raw": {
+    "City Cars": "city_cars",
+    "Small Cars": "small_cars",
+    "Station Wagon": "station_wagon",
+    "Compact": "compact",
+    "Sedan": "sedan",
+    "SUV": "SUV",
+    "Coupe": "coupe",
+    "Convertible": "convertible",
+    "Minivan": "minivan",
+    "Front-Wheel Drive": "Front wheels",
+    "Rear-Wheel Drive": "Rear wheels",
+    "4x4 Permanent": "4x4 (permanent)",
+    "4x4 Auto": "4x4 (attached automatically)",
+    "4x4 Manual": "4x4 (attached manually)",
+    "Benzyna": "Gasoline",
+    "Diesel": "Diesel",
+    "Benzyna + LPG": "Gasoline + LPG",
+    "Bezowy": "beige",
+    "Czarny": "black",
+    "Niebieski": "blue",
+    "Brazowy": "brown",
+    "Bordowy": "burgundy",
+    "Zloty": "golden",
+    "Szary": "gray",
+    "Zielony": "green",
+    "Inny": "other",
+    "Czerwony": "red",
+    "Srebrny": "silver",
+    "Fioletowy": "violet",
+    "Bialy": "white",
+    "Zolty": "yellow",
+    "Nowy": "New",
+    "Uzywany": "Used"
+  }
+}
